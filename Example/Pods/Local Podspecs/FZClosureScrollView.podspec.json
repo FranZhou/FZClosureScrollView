@@ -2,7 +2,7 @@
   "name": "FZClosureScrollView",
   "version": "0.1.0",
   "summary": "Use closure instead of delegate to implement the callback for UIScrollView/UITableView/UICollectionView.",
-  "description": "TODO: Add long description of the pod here.",
+  "description": "Use closure instead of delegate to implement the callback for UIScrollView/UITableView/UICollectionView.",
   "homepage": "https://github.com/FranZhou/FZClosureScrollView",
   "license": {
     "type": "MIT",
@@ -18,5 +18,29 @@
   "platforms": {
     "ios": "9.0"
   },
-  "source_files": "FZClosureScrollView/Classes/**/*"
+  "source_files": "FZClosureScrollView/Classes/**/*",
+  "subspecs": [
+    {
+      "name": "FZScrollView",
+      "source_files": "FZClosureScrollView/Classes/FZScrollView/**/*"
+    },
+    {
+      "name": "FZTableView",
+      "source_files": "FZClosureScrollView/Classes/FZTableView/**/*",
+      "dependencies": {
+        "FZClosureScrollView/FZScrollView": [
+
+        ]
+      }
+    },
+    {
+      "name": "FZCollectionView",
+      "source_files": "FZClosureScrollView/Classes/FZCollectionView/**/*",
+      "dependencies": {
+        "FZClosureScrollView/FZScrollView": [
+
+        ]
+      }
+    }
+  ]
 }

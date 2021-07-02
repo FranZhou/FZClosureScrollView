@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+  Use closure instead of delegate to implement the callback for UIScrollView/UITableView/UICollectionView.
                        DESC
 
   s.homepage         = 'https://github.com/FranZhou/FZClosureScrollView'
@@ -31,6 +31,20 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '9.0'
 
   s.source_files = 'FZClosureScrollView/Classes/**/*'
+
+  s.subspec 'FZScrollView' do |scrollView|
+    scrollView.source_files = 'FZClosureScrollView/Classes/FZScrollView/**/*'
+  end
+
+  s.subspec 'FZTableView' do |tableView|
+    tableView.source_files = 'FZClosureScrollView/Classes/FZTableView/**/*'
+    tableView.dependency 'FZClosureScrollView/FZScrollView'
+  end
+
+  s.subspec 'FZCollectionView' do |collectionView|
+    collectionView.source_files = 'FZClosureScrollView/Classes/FZCollectionView/**/*'
+    collectionView.dependency 'FZClosureScrollView/FZScrollView'
+  end
   
   # s.resource_bundles = {
   #   'FZClosureScrollView' => ['FZClosureScrollView/Assets/*.png']

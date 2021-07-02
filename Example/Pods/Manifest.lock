@@ -1,5 +1,13 @@
 PODS:
-  - FZClosureScrollView (0.1.0)
+  - FZClosureScrollView (0.1.0):
+    - FZClosureScrollView/FZCollectionView (= 0.1.0)
+    - FZClosureScrollView/FZScrollView (= 0.1.0)
+    - FZClosureScrollView/FZTableView (= 0.1.0)
+  - FZClosureScrollView/FZCollectionView (0.1.0):
+    - FZClosureScrollView/FZScrollView
+  - FZClosureScrollView/FZScrollView (0.1.0)
+  - FZClosureScrollView/FZTableView (0.1.0):
+    - FZClosureScrollView/FZScrollView
   - Nimble (8.0.9)
   - Quick (2.2.1)
 
@@ -18,7 +26,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  FZClosureScrollView: d2515e821d07888c7a504cadda99cf8edfff8ae2
+  FZClosureScrollView: bcddd3d0dc5bfeddb87f66ee991b72d7313c3764
   Nimble: 98b888285a615fd34f20e61753cf58ea1402bde4
   Quick: f5754d69b7013f5864c29aab9ae6f0c79c5bc200
 
