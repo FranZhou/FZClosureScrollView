@@ -7,64 +7,65 @@
 
 import UIKit
 
-public class FZScrollViewManager: NSObject {
+/// optional method in Delegate
+private enum ScrollViewDelegateOptionalSelector: String, CaseIterable {
+    case didScroll
+    case didZoom
+    case willBeginDragging
+    case willEndDragging
+    case didEndDragging
+    case willBeginDecelerating
+    case didEndDecelerating
+    case didEndScrollingAnimation
+    case viewForZooming
+    case willBeginZooming
+    case didEndZooming
+    case shouldScrollToTop
+    case didScrollToTop
+    case didChangeAdjustedContentInset
 
-    /// optional method in Delegate
-    internal enum ScrollViewDelegateOptionalSelector: String, CaseIterable {
-        case didScroll
-        case didZoom
-        case willBeginDragging
-        case willEndDragging
-        case didEndDragging
-        case willBeginDecelerating
-        case didEndDecelerating
-        case didEndScrollingAnimation
-        case viewForZooming
-        case willBeginZooming
-        case didEndZooming
-        case shouldScrollToTop
-        case didScrollToTop
-        case didChangeAdjustedContentInset
-
-        func selector() -> Selector? {
-            switch self {
-                case .didScroll:
-                    return #selector(UIScrollViewDelegate.scrollViewDidScroll(_:))
-                case .didZoom:
-                    return #selector(UIScrollViewDelegate.scrollViewDidZoom(_:))
-                case .willBeginDragging:
-                    return #selector(UIScrollViewDelegate.scrollViewWillBeginDragging(_:))
-                case .willEndDragging:
-                    return #selector(UIScrollViewDelegate.scrollViewWillEndDragging(_:withVelocity:targetContentOffset:))
-                case .didEndDragging:
-                    return #selector(UIScrollViewDelegate.scrollViewDidEndDragging(_:willDecelerate:))
-                case .willBeginDecelerating:
-                    return #selector(UIScrollViewDelegate.scrollViewWillBeginDecelerating(_:))
-                case .didEndDecelerating:
-                    return #selector(UIScrollViewDelegate.scrollViewDidEndDecelerating(_:))
-                case .didEndScrollingAnimation:
-                    return #selector(UIScrollViewDelegate.scrollViewDidEndScrollingAnimation(_:))
-                case .viewForZooming:
-                    return #selector(UIScrollViewDelegate.viewForZooming(in:))
-                case .willBeginZooming:
-                    return #selector(UIScrollViewDelegate.scrollViewWillBeginZooming(_:with:))
-                case .didEndZooming:
-                    return #selector(UIScrollViewDelegate.scrollViewDidEndZooming(_:with:atScale:))
-                case .shouldScrollToTop:
-                    return #selector(UIScrollViewDelegate.scrollViewShouldScrollToTop(_:))
-                case .didScrollToTop:
-                    return #selector(UIScrollViewDelegate.scrollViewDidScrollToTop(_:))
-                case .didChangeAdjustedContentInset:
-                    if #available(iOS 11.0, *) {
-                        return #selector(UIScrollViewDelegate.scrollViewDidChangeAdjustedContentInset(_:))
-                    } else {
-                        return nil
-                    }
-                @unknown default:
+    func selector() -> Selector? {
+        switch self {
+            case .didScroll:
+                return #selector(UIScrollViewDelegate.scrollViewDidScroll(_:))
+            case .didZoom:
+                return #selector(UIScrollViewDelegate.scrollViewDidZoom(_:))
+            case .willBeginDragging:
+                return #selector(UIScrollViewDelegate.scrollViewWillBeginDragging(_:))
+            case .willEndDragging:
+                return #selector(UIScrollViewDelegate.scrollViewWillEndDragging(_:withVelocity:targetContentOffset:))
+            case .didEndDragging:
+                return #selector(UIScrollViewDelegate.scrollViewDidEndDragging(_:willDecelerate:))
+            case .willBeginDecelerating:
+                return #selector(UIScrollViewDelegate.scrollViewWillBeginDecelerating(_:))
+            case .didEndDecelerating:
+                return #selector(UIScrollViewDelegate.scrollViewDidEndDecelerating(_:))
+            case .didEndScrollingAnimation:
+                return #selector(UIScrollViewDelegate.scrollViewDidEndScrollingAnimation(_:))
+            case .viewForZooming:
+                return #selector(UIScrollViewDelegate.viewForZooming(in:))
+            case .willBeginZooming:
+                return #selector(UIScrollViewDelegate.scrollViewWillBeginZooming(_:with:))
+            case .didEndZooming:
+                return #selector(UIScrollViewDelegate.scrollViewDidEndZooming(_:with:atScale:))
+            case .shouldScrollToTop:
+                return #selector(UIScrollViewDelegate.scrollViewShouldScrollToTop(_:))
+            case .didScrollToTop:
+                return #selector(UIScrollViewDelegate.scrollViewDidScrollToTop(_:))
+            case .didChangeAdjustedContentInset:
+                if #available(iOS 11.0, *) {
+                    return #selector(UIScrollViewDelegate.scrollViewDidChangeAdjustedContentInset(_:))
+                } else {
                     return nil
-            }
+                }
+            @unknown default:
+                return nil
         }
     }
+}
+
+// MARK: -
+public class FZScrollViewManager: NSObject {
 
     // MARK: - property
     public var scrollViewDelegateDecorator: FZScrollViewDelegateDecorator?
