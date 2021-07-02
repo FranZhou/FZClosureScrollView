@@ -1,0 +1,6 @@
+framework module Pods_FZClosureScrollView_Tests {
+  umbrella header "Pods-FZClosureScrollView_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

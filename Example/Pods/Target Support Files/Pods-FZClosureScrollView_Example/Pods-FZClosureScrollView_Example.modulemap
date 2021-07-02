@@ -1,0 +1,6 @@
+framework module Pods_FZClosureScrollView_Example {
+  umbrella header "Pods-FZClosureScrollView_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

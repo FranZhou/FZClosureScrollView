@@ -1,0 +1,6 @@
+framework module FZClosureScrollView {
+  umbrella header "FZClosureScrollView-umbrella.h"
+
+  export *
+  module * { export * }
+}
