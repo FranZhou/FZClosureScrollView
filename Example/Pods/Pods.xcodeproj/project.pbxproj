@@ -7,53 +7,51 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0029D156CECE2415359C30F5CD6B9F2A /* FZScrollViewManager+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A81B942A0BC61FCB1FC0A8293AC0FE9 /* FZScrollViewManager+Delegate.swift */; };
+		0138901B8868BB619BC21127173591A0 /* FZTableViewManager+DelegateCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2592F8F1964006EC13136B1D5CAB671A /* FZTableViewManager+DelegateCheck.swift */; };
 		01A04218EC99765ADC0409631E60BB97 /* BeVoid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7984E2929E13FE9962030FA664F09CB2 /* BeVoid.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
-		0305DF0EA666B5D5C3F9FD2AAE5DF8C2 /* FZTableViewDragDelegateDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B1A04803B599BDEA7F82507461EFAE /* FZTableViewDragDelegateDecorator.swift */; };
+		02218680598460F0AD519EDDB3F3A9F2 /* FZClosureScrollView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F6C30F1972BC45C0BA76DDE6920FA476 /* FZClosureScrollView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		023A3671B1D63D7399CE64FD00A88B2B /* FZTableViewManager+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7EAC08621C51F58D02F8229064EE8D /* FZTableViewManager+Delegate.swift */; };
 		03D2B9651FD82FC0D5C97AD6F0E561D4 /* BeLessThanOrEqual.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01872A5724C80F9F66F85BE505EF41E /* BeLessThanOrEqual.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		096A350DACDDDFF8805FDAEBE86EC2F6 /* NimbleEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CA7814D47356EA90B9ECB4FDB3F859 /* NimbleEnvironment.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		0A363AD0A93A6F9E8961F52B10580718 /* NMBExpectation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4097A6637537D84D28A10721A2E7EC6 /* NMBExpectation.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
-		0A98FFD39C646113ADF97DA1B46B5C33 /* FZTableViewManager+DragDelegateCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDEBC46CC14B996A787E4F41D95304E /* FZTableViewManager+DragDelegateCheck.swift */; };
 		0D76A5CAF71781C4E1CC5E0D70D3426D /* QuickSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C572C7D93AF0E9B50A517675CD4D665 /* QuickSpec.m */; };
 		0DFBCBE5C1E75DC9CD38757ACF33E0A7 /* ToSucceed.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25751F36800946C1A1A22406B3596FE /* ToSucceed.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		0E48962ACAEDD1289D7DAE793F3A731F /* Expectation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A3558661CEF3BE87C498E32AEC3EB0 /* Expectation.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		1126E10683633A8503EE54632EE12803 /* Contain.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB539966A7AFD5CB6811DAA9B761F1B /* Contain.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		113CB0649F1C41E6358C27C4DC19D0A7 /* XCTestObservationCenter+Register.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C42CFB5518B1F634F1B99EBB383B6B0 /* XCTestObservationCenter+Register.m */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
-		13CA64FA186DA0574402C2534641F826 /* FZTableViewDataSourceDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B5D6B4EB1199AD1E0AA430AB07D1A5 /* FZTableViewDataSourceDecorator.swift */; };
 		15DB927C7009266E077993F38882D40E /* DSL.h in Headers */ = {isa = PBXBuildFile; fileRef = FDB97E529E69C80140CF90C16575922D /* DSL.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1662CA3F2AF3A878CFE40EBB839F4463 /* FZTableViewManager+DropDelegateCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA2EA7DEB2E09544FC39C4DC6942DD0 /* FZTableViewManager+DropDelegateCheck.swift */; };
+		19C545D801588524D963B93144DAC136 /* FZCollectionViewManager+DelegateCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8526B8A0A9AAFE1492693B51857832BC /* FZCollectionViewManager+DelegateCheck.swift */; };
 		1AF9A29318570C093E7F92579080C6C4 /* Nimble-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DD3495984E50717EE5951C04EAFB788 /* Nimble-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1C4932E43DB9B212376190595C0C3117 /* FZClosureScrollView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FDF8124D810FB453E99526DDEDA263F8 /* FZClosureScrollView-dummy.m */; };
 		1DA94F92235E0C3A0FD7768DD848068C /* Closures.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3107E43F634AF3B221072AD06EDC701 /* Closures.swift */; };
 		1E3B805AA2F844C715C9F3135A7D7BD5 /* ContainElementSatisfying.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB293BEEC38AC66C26BFE450BF27D14F /* ContainElementSatisfying.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
-		1F095F0C6A98A996576D0AE8E80AE6B8 /* FZCollectionViewManager+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A830BCAEB456AE12BACF101F05678CBC /* FZCollectionViewManager+Delegate.swift */; };
 		1F5967DC89CF19ABF6F288617010D900 /* DSL.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FD90DC04A8EE437DF70BED5C4A8D946 /* DSL.m */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		20A7D607CEC9E4D0F0B7ECC1A545A05F /* QuickConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = D864B01792C2475774D9271679F17B9A /* QuickConfiguration.swift */; };
+		20F78CB5B82DB61EB160D1F5FA75ADD7 /* FZCollectionViewManager+DataSourceCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7A9BFA1C76F56031E927F6D021896D /* FZCollectionViewManager+DataSourceCheck.swift */; };
 		2145470ED629F29ABCCBF304F24DA354 /* mach_excServer.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C2D1D1C6474F27A8FCC8D6856C47704 /* mach_excServer.c */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		2432100DBFB954DDC3AC2CEA3E170B9D /* BeIdenticalTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B58265E7E51E07AFB8D2BD2A392369 /* BeIdenticalTo.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		2551CBC318614FA2BF169B2844F46724 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EBC8F300895E39EA0DF6D6B2B5E6BCD /* XCTest.framework */; };
 		27C96AB21C9D153E5EEE8CD305935088 /* NMBExceptionCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = E5207C4D8365FB324A7064CEAED8E497 /* NMBExceptionCapture.m */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		2A7FA62A2799B4F51D2B3B4463763BE5 /* String+C99ExtendedIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D790CFC0DD27CF5E3726D13716B8457 /* String+C99ExtendedIdentifier.swift */; };
 		2AC400B28F334D89B97F36620EF4F362 /* CwlDarwinDefinitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487FC1B156A23E9FE1FB704254E44A12 /* CwlDarwinDefinitions.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
-		2BF5B10571C388B7A0DBABD438538664 /* FZTableViewManager+DataSourceCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21CB4BE77108655F04A986F88F0C5B5 /* FZTableViewManager+DataSourceCheck.swift */; };
+		2C13D92808E50B367272B6045E00BA86 /* FZCollectionViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A97A4D1A258AB5BDE393B546B7C2613 /* FZCollectionViewManager.swift */; };
 		2C7EA1D1F721BB8C5AFBA3D6427C1034 /* Nimble-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A565AB2A63D27ACF855DE572A8749763 /* Nimble-dummy.m */; };
 		2D1BD8BC036C099C617457E7BF7AC8CB /* CwlCatchBadInstruction.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5912F55BE3AA373DBEF439FEAE802EC /* CwlCatchBadInstruction.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		2EF7BE507134ADC494F2D7CD417A7892 /* Pods-FZClosureScrollView_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F83785D665E420BD19286269BD7EC46 /* Pods-FZClosureScrollView_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2F4B54F8C8B5D2EB3FFCF77D7D1E2021 /* FZTableViewDelegateDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0C84804A9C95377A89BD61922FDEF2 /* FZTableViewDelegateDecorator.swift */; };
 		31F310A182C07209B212AC43C4AD699E /* CwlCatchException.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44D64C97F0EB045C86340CAD74FF65D /* CwlCatchException.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		351C5491EB39A1A8CC635F0A27C3E372 /* QuickTestObservation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FDF855D797FF314FA501247ABF1FEC7 /* QuickTestObservation.swift */; };
 		3D88FA031800EAD5410C710DC430D909 /* World.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F792826C2A1DCA549A626F8B6BB9048 /* World.swift */; };
-		3F26E549548AFC238CC31109CEF052F0 /* FZScrollViewManager+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9F8DADA2E32F45E19C64E932845CE3 /* FZScrollViewManager+Delegate.swift */; };
 		3F31BA28AEC03B51AF90221CC4AD864B /* World+DSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A8B866BF1B5741F3E8FDA8E728708F /* World+DSL.swift */; };
 		416FEB65425C4D4A5BD9A56DBB994F72 /* QuickConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = A1E6D0F0B64E0881BB387BFDBBAEDE64 /* QuickConfiguration.m */; };
+		4487D9D631165CED31D8656E1EA2BEBC /* FZTableViewManager+DropDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAEA01F769784DFFC02C876476A7DAE /* FZTableViewManager+DropDelegate.swift */; };
 		44CC283E83FE6CCCAAB2F327740770E7 /* QuickObjCRuntime.h in Headers */ = {isa = PBXBuildFile; fileRef = 917DABFABA971087CC881C67BBCB896A /* QuickObjCRuntime.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		4507C3FA3B3C2A7A13D9C503CFD9CC19 /* Nimble.h in Headers */ = {isa = PBXBuildFile; fileRef = B778739B132B4FEC875F9615ED37CAEA /* Nimble.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		454984D7A7BC06767EDB0D5350236BCB /* FZTableViewManager+DropDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E4B488CAC312F147890C2606A86DE0 /* FZTableViewManager+DropDelegate.swift */; };
 		45718892681E27BFB3CA4F77FB637189 /* Behavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7C9BFBE17C3F91CEB7AEF368D4BF50 /* Behavior.swift */; };
+		4766F75DC3E98597721AAE6059E782D7 /* FZCollectionViewDataSourceDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C537A2A89BAA649D329BE187DAABA705 /* FZCollectionViewDataSourceDecorator.swift */; };
 		4BB64DB9E1A1717C926E9A2FA7D5DA97 /* RaisesException.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5808B9A93D2F619B1FB8E6A7D46F1C /* RaisesException.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		501A30CB9F16F63F7FBABA667043DCCC /* ElementsEqual.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E79BFE04E48F6AC4C63F2B0CAF4E210 /* ElementsEqual.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
-		5080F7E2E94961B1A2D8FE7F5099E0C9 /* FZCollectionViewManager+DelegateCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4593FF9FC08E3E01A4080E092448E9 /* FZCollectionViewManager+DelegateCheck.swift */; };
-		51238FFB91E0ADAADEFE14D96E067019 /* FZTableViewManager+PrefetchDataSourceCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A66C15D0A7692E359A8BF4E1D32983 /* FZTableViewManager+PrefetchDataSourceCheck.swift */; };
 		520E7371FE7DB9BF712762793CC0BB4B /* AssertionDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCFB9311ED98345A6282A28A6CFAD83 /* AssertionDispatcher.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
+		578A0812793CBED22D7FAE4A3E613811 /* FZTableViewManager+DragDelegateCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5802AAB22E3904CF786F5DDBF33874D2 /* FZTableViewManager+DragDelegateCheck.swift */; };
 		5A7CA27F8A4CB0DCBDBFB48B301E26D6 /* URL+FileName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0366B612A2ACEBDB6626EBF65E107253 /* URL+FileName.swift */; };
 		5DD0B3311BB289641928D6E734F4ED55 /* MatcherFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A80B6F8B82934D9A77E355D2A690124 /* MatcherFunc.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		5FF3D0D8B874D76C903952F8E318E006 /* Quick-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B9973833824E7ED01540C73DCB2C1247 /* Quick-dummy.m */; };
@@ -62,23 +60,23 @@
 		612ED74D1EF6CEB604B8C76A50630AFB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA8B94E9D3B433157168D1EECCEC11CD /* Foundation.framework */; };
 		62B4411C147375E0F1D0639B40963428 /* Quick.h in Headers */ = {isa = PBXBuildFile; fileRef = E0FE7DF20C0080F14BDF5F181BF2345F /* Quick.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		64FF7B082BBD75946F6B6342F202F6CC /* DSL+Wait.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23387148BE56CC3EB877BEE9F509DA9 /* DSL+Wait.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
+		6614A019110DBD293E220F7EF3853A88 /* FZTableViewDragDelegateDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4162C6D8FFB5D4CF8A3852492F8A2009 /* FZTableViewDragDelegateDecorator.swift */; };
 		6651438A66A1DEB7B86EC4814EA9DA16 /* Callsite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5700BD6275F82CB443901CE97C7FBFE2 /* Callsite.swift */; };
 		665B3B718611BE55F338D2CF4602AC74 /* NMBExceptionCapture.h in Headers */ = {isa = PBXBuildFile; fileRef = 28A8FC83ADFAB68A939D061B9DA7B2C3 /* NMBExceptionCapture.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6829D5D1C29D204934DC1EB4428DC0BC /* FZTableViewManager+DelegateCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB67281B8246E35ADB5B6F44BFFCC162 /* FZTableViewManager+DelegateCheck.swift */; };
-		6958E3702C9846A7BBA329124EB142A7 /* FZTableViewPrefetchDataSourceDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA292B7CF10985D70E455F8ED435BAD2 /* FZTableViewPrefetchDataSourceDecorator.swift */; };
+		681C0F03626372C05906F76A2D5464AC /* FZCollectionViewManager+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B156F310990FFB7EF8CF342F67F4B98 /* FZCollectionViewManager+Delegate.swift */; };
 		69FB2A0E963C18660AA3B8CFE72FE3C4 /* Await.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6971FF4FC2D354A79275D7A0E176A2EC /* Await.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		6C53B0695A60489C1FFCBE9FABBFA47A /* QCKDSL.h in Headers */ = {isa = PBXBuildFile; fileRef = 39008AE1E1CAEB0064DAD5FE36764295 /* QCKDSL.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6CE2E10D6237472E319B05C3F16A2237 /* ExpectationMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2DD27CB90704924D6D50162205BD97 /* ExpectationMessage.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		6D2EB1AA036F99007BFB31045522F459 /* CwlCatchException.h in Headers */ = {isa = PBXBuildFile; fileRef = C234427DC01A4C983F67F5875E295B28 /* CwlCatchException.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6E5819480E972CA10D8D9A34D94405BF /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0EE0182653D00926C08100E31BD3795 /* Filter.swift */; };
 		7433873AD9AFAE2CA71EFD10FA2CD88C /* QuickSpecBase.h in Headers */ = {isa = PBXBuildFile; fileRef = FCA2F2ED2C8A41C278097D187DEBE989 /* QuickSpecBase.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		771EB2B30E5BBDB9DF380990785273A6 /* FZCollectionViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2611C94F22B85CC9FC0D7DDB77CA8EB3 /* FZCollectionViewManager.swift */; };
 		784F57A0959BD334BD0D1158C8359135 /* HaveCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CC2D566D5FDF7981081C8C4D3648C2 /* HaveCount.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		79A86162B6B82D7F8795DCED169BE954 /* QCKDSL.m in Sources */ = {isa = PBXBuildFile; fileRef = A789DFAD27D89A0DA5B60793DB255366 /* QCKDSL.m */; };
 		7FA57A4E6F31FBD1C126E7689E1AD61C /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25030C0A2B44B4AFE6D77A9BAAF84088 /* Configuration.swift */; };
 		7FA979F226052E7C77BA9D37FEDA95D2 /* Predicate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE05B0AC3FA989A47A0C2BCE00A237B9 /* Predicate.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		800D781D242F5E551B42C4D8393CBB0B /* SatisfyAnyOf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75423B81B53812C99CD2B45F03DB3037 /* SatisfyAnyOf.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		80D116D3CC62170FF258E5AEABE6792A /* BeEmpty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030CD2D7B5E0A8B711B3F24711647E5D /* BeEmpty.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
+		8451AE9C9F62E30506CAB3AEA8CDFECB /* FZTableViewManager+DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812021E389659B2CA0F7898B5701A3E4 /* FZTableViewManager+DataSource.swift */; };
 		8510469EB9B18B318478019A11F7D784 /* SatisfyAllOf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CD7AC874836F8DA7EC88B0872CDBAE /* SatisfyAllOf.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		86D9716ADE347B2916F9CB715A3B26D5 /* CwlCatchException.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F5C65CA8F308F74190933D608601A6 /* CwlCatchException.m */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		87A81544652A3E3420F32BE7C737353A /* Pods-FZClosureScrollView_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CA49BABC2CC135D2B65613F5FE74A610 /* Pods-FZClosureScrollView_Example-dummy.m */; };
@@ -86,46 +84,50 @@
 		8C4E24477B97A29262470BF157820082 /* Pods-FZClosureScrollView_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A45CB8950F44AB1A0713CDBB4362D6AB /* Pods-FZClosureScrollView_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8E2D915F77F55ADEBC7C3B223A4F3A9C /* NMBObjCMatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A81330D968B34C59FC40E730C91DA50 /* NMBObjCMatcher.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		8F01AC0753C01A52C349A233690D7938 /* AdapterProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A6C6DA8267274529580FC6BB388664 /* AdapterProtocols.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
-		8F70F585357FB879BAF2221E9356CFD5 /* FZClosureScrollView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D810D08FD0412013147D0C7FDBEA25C /* FZClosureScrollView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9458951F8ED1A0AACD5BAE4055106B0F /* FZClosureScrollView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BCE4AC91FE1FBED69A40AB853877FBAA /* FZClosureScrollView-dummy.m */; };
 		95079B04F2442FF22611EA7AC48EF81E /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CC867E16210A5E3628561E0E52DAED /* Example.swift */; };
-		969E5EA660A05F41F8ED595A82FC7C0E /* FZCollectionViewDelegateDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AF98D7AFE4AFC8606F5EA73875CA61 /* FZCollectionViewDelegateDecorator.swift */; };
-		97347574A5914A438B16F4B57130E0B6 /* FZScrollViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FB590D86A6F91263424BEF8F05B1EF /* FZScrollViewManager.swift */; };
 		97FA3A0D9196BB3D170B7F7F2A6BDFCD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA8B94E9D3B433157168D1EECCEC11CD /* Foundation.framework */; };
 		98D4C88DB61717125A36A5334F27E5C6 /* NSBundle+CurrentTestBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB69E074D53782BE2F1E1AEC1CAA6797 /* NSBundle+CurrentTestBundle.swift */; };
 		9A1BE88CE8717D03F12BF668F2ACF766 /* BeginWith.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA676B386635A5851AD41777A665907 /* BeginWith.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
-		9AC7363DDF1C4188FFA8EF82D658EC51 /* FZTableViewManager+DragDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C243B1B91C3F264DD76F290B3FE509AD /* FZTableViewManager+DragDelegate.swift */; };
 		9D1731F108FFD33C034F6A859A8A625B /* DSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8599C685A6E9088137A44D9BD36F320D /* DSL.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		9D56BAD608CA598B071D591E0112F6BE /* NMBStringify.m in Sources */ = {isa = PBXBuildFile; fileRef = 817BE9A694522F7F4026799121CBA1C7 /* NMBStringify.m */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
+		9D9163BA1D697C1052DB0A1B5BFE0725 /* FZTableViewManager+DataSourceCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EC5EB30D0AF7405A63053D42C0D21B /* FZTableViewManager+DataSourceCheck.swift */; };
 		9F2643593B001BED9C62BEF8FB0EBF9D /* QuickTestSuite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0803F35E782099A482A475DC094AA98B /* QuickTestSuite.swift */; };
+		A0056B2C75C2C96BEB301DC0225F8EFB /* FZTableViewManager+DragDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9271F56DC21AF50CF489D4CA65DF481 /* FZTableViewManager+DragDelegate.swift */; };
+		A11226A7D7A6222F243D646780518A60 /* FZTableViewDelegateDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D2F5908D6B549A698055E2D9E33F98 /* FZTableViewDelegateDecorator.swift */; };
 		A1D30A36109E6A90E1791B51BAE55A72 /* BeLessThan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7425C80AFE5874C82C321C25C8FD8E4E /* BeLessThan.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
-		A4B92FFB2140FCC783C55ADC2F4C4F85 /* FZTableViewDropDelegateDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF2136A87B0E3D3823EC811886002F2 /* FZTableViewDropDelegateDecorator.swift */; };
 		A4E1AC7A059F8774AECC57EB095245DA /* CwlBadInstructionException.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3DC3139A1280CF034113B965D1A718 /* CwlBadInstructionException.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		A5EB253AF98ECD3895797CF40302FA39 /* QuickConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = EA20C87137C7C7A9356234D9535104D4 /* QuickConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A79C238DCE2A121DE8308D676038064F /* FZTableViewManager+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653A281DC514881E535E1DE10B03935B /* FZTableViewManager+Delegate.swift */; };
 		A9AF3F7AB8269225790D01ABD9F559D7 /* DSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81545145A1C5A4394570ECEC1644AC94 /* DSL.swift */; };
+		AC11840650F6DD74802D0D5BA6516C82 /* FZScrollViewDelegateDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929DE45DF4A2875AFCAD869A4DD18711 /* FZScrollViewDelegateDecorator.swift */; };
 		AD4AC85D286EF36E94059676F912BE33 /* Equal+Tuple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431CBAEE164D12511676DF2CA2E5F6E1 /* Equal+Tuple.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		AE9B8D884D9817D95AE9547AC70C9641 /* SuiteHooks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17550890BB023B26063ABDFE4B258145 /* SuiteHooks.swift */; };
 		AEB5246A054AE75A5BFA7D8C770E9E8E /* PostNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B7283F4C347135472840AFDA74C4E5A /* PostNotification.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
+		B0A630207D8F196752CD42D089505DB6 /* FZTableViewManager+DropDelegateCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BBDED1DA37F40EA5DD586929E212E7B /* FZTableViewManager+DropDelegateCheck.swift */; };
 		B212BEE5869453F67DE16621A5388954 /* BeGreaterThan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9817083983497DB3ED6001E3E97533CB /* BeGreaterThan.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		B2D03C30992D861A3C55D5301D718518 /* ExampleHooks.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3862A4029F0AE7BD5D04E22605C911F /* ExampleHooks.swift */; };
 		B844C53365327CB75CC1645AE73CDCED /* CwlMachBadInstructionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 4533A88B2DE8230A61D3FE3F4CD5BC98 /* CwlMachBadInstructionHandler.m */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		C0D3EDC5F8D2546D5B5CB583230606B7 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9D232917B7F9161AD32800BD7188F6 /* Errors.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		C12A5EDA29052D6AB6B5C08EB827147F /* mach_excServer.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B2EF8A720D0EAA49000115560DF7BBC /* mach_excServer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C2D906D76A9597A6C5B496D316893560 /* AllPass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECCD0DFA1B5AC88BE310179E43A5722 /* AllPass.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
+		C689F2445B7424BEA1450255C1941AC6 /* FZTableViewDropDelegateDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5016C48852F8B4026672D85B1044D3 /* FZTableViewDropDelegateDecorator.swift */; };
 		C759FEB2A9EF6B829DF536816DF4CABB /* ExampleMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1014F88FBB418E7E9B24F6C3E73E89DA /* ExampleMetadata.swift */; };
 		C7B3848543A19E420CA7638FBF6775CB /* NMBStringify.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B085943B46F49A20A9E6E3DE9F200FE /* NMBStringify.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CA791EB47A2D4F838A353E79B693A4B8 /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B63A49E44A8499A1A97B90F2A37A90C /* Match.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		CC9476F9485F3506AE3374888A29D0AA /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0AADE582B5BD22FA91D3DAD8844B92 /* Expression.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		CFB78DAD8A511C9123F8559BA702B5E4 /* AssertionRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42246731B3D9A2B8790893EBBD465FFF /* AssertionRecorder.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
-		D542C83024132003AFD0726E8A638323 /* FZTableViewManager+DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F06867D1513A35ABE101B9E272BAA0 /* FZTableViewManager+DataSource.swift */; };
+		CFF52CAB0C4CC20A19880581E5F5A808 /* FZTableViewManager+PrefetchDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD5603053306C537156EAEB01C3D674 /* FZTableViewManager+PrefetchDataSource.swift */; };
+		D474292569E5F3C3456F3C5B9DBE661A /* FZTableViewManager+PrefetchDataSourceCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB8926ABF6ADC72ED35FA11BD0F3296 /* FZTableViewManager+PrefetchDataSourceCheck.swift */; };
 		D562A34837C271ABE23892804EABFC83 /* QuickSpecBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 10C36E789BFF17B70EC945692C82D859 /* QuickSpecBase.m */; };
 		D5909A235107CDC9E1B0C12CB08B6505 /* DispatchTimeInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85BB1858F6652DC026D80938BD29DD97 /* DispatchTimeInterval.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
+		D602E867E2DD84BA4E254CE63A9116BF /* FZCollectionViewDelegateDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D05BF09DEF04ED15C8BE49374A514C2 /* FZCollectionViewDelegateDecorator.swift */; };
 		D6276432FE863185A68BC069E47F1BD9 /* ThrowAssertion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2924BBEE0618BF7EC93C2C9016D0CCCA /* ThrowAssertion.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
-		D73A471834F39929317A108F0182326B /* FZTableViewManager+PrefetchDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14CDD0FDDEA13E0BC116413817912CA8 /* FZTableViewManager+PrefetchDataSource.swift */; };
-		D767A81875FBF3CF0E050FCCA5F2AC26 /* FZTableViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DF3414908859B978E230D34E3ADBA1 /* FZTableViewManager.swift */; };
 		D989AA28FF39931A8E9F6FFD665FD0B7 /* CwlMachBadInstructionHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 68BC691C67B0A64F7510D5C6298F4A80 /* CwlMachBadInstructionHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DAD72998C083BC1DDD573464A009BD8B /* FZTableViewPrefetchDataSourceDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F110F8631BD47110BD7D72055BEE56 /* FZTableViewPrefetchDataSourceDecorator.swift */; };
 		DB4F2A50A04E673714C6A8AA32D94D53 /* Stringers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086F10523AFF38648C15FCA6AA129C23 /* Stringers.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		DBB0B80C28F80394644E12D3C4EE2CB3 /* Async.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD69990709ED1315032AA1A075A30E4A /* Async.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
+		DCC0FA809DDC8FD838F0ED892E6FE140 /* FZTableViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2EA624BE8ACFFA8A6F28CDE2D88C83C /* FZTableViewManager.swift */; };
+		E07839190CDDC68B6786AEF51D399737 /* FZScrollViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902BBF9B2C3FA0561F11CCAC503272EB /* FZScrollViewManager.swift */; };
 		E0E2E724288F13C852B9DB0C323ABBE4 /* BeAnInstanceOf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D419D9857BEDF4AABA8218936B3677E /* BeAnInstanceOf.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		E1F708C047C1B3C52B13F4D322D15F69 /* Equal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FE7135B910B114C8F5096BEF6D8C97 /* Equal.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		E282A90FA01DE2C5003A3E17907E17A9 /* QuickSpec.h in Headers */ = {isa = PBXBuildFile; fileRef = E6B078FDEFF43D01A46CEC09B78FA029 /* QuickSpec.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -135,15 +137,16 @@
 		E8AE858EC457AE28E23FE08EFB32E892 /* QuickSelectedTestSuiteBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757BAF37999C9047D1AE2770EE6A4A6E /* QuickSelectedTestSuiteBuilder.swift */; };
 		E9EB5895A3C64621F2D5D153BD103D6E /* BeAKindOf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F8F92D4F337391CA98495AED7459FB /* BeAKindOf.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		EA3B734318B9E04D966DB61ED42B08EC /* ErrorUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = E762B92915992D34CF1197690DD6C504 /* ErrorUtility.swift */; };
-		EC8DDF160B6A51AFDCEA96190727847C /* FZScrollViewDelegateDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78926642357C0B6015F5F801CC73820A /* FZScrollViewDelegateDecorator.swift */; };
+		EC06AF47072BFB7005A4F47FBF3409BA /* FZCollectionViewManager+DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B395A398BC0D59863B32B4BC99A308D /* FZCollectionViewManager+DataSource.swift */; };
+		EE0DF5105FF00E5C21BC359AC9B0F95C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA8B94E9D3B433157168D1EECCEC11CD /* Foundation.framework */; };
 		EE7C2A10D09991BF6E14ECE2C8F41243 /* XCTestSuite+QuickTestSuiteBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = DBCE4BA046CAEB42619707DBED53725C /* XCTestSuite+QuickTestSuiteBuilder.m */; };
 		F02B60DD96EB7DE9CA25530D09966391 /* ExampleGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54786640730EAADE6139B51A243CA4B7 /* ExampleGroup.swift */; };
 		F107ECBBF07F3EB57146CE6537BA8702 /* Pods-FZClosureScrollView_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 66A05714F4E8FEA5C91ED91CC2ACA096 /* Pods-FZClosureScrollView_Tests-dummy.m */; };
 		F17CCA8ABDDEE4BA268DC3D82A9C59BC /* FailureMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE0135D5FDA5A4415EADADB336B9246 /* FailureMessage.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		F1EDFF4C8CD256D625C5B46E0768AEFB /* BeCloseTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA8E066CB31D5BC83F54CCFE6CFD9B8 /* BeCloseTo.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
-		F31C80E8677E06972ED0F62CA1A597B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA8B94E9D3B433157168D1EECCEC11CD /* Foundation.framework */; };
 		F74B14337C89364EAABE436EEF56705D /* HooksPhase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599A5A20097CA4DD27ECE4579DDE32BD /* HooksPhase.swift */; };
 		F7FF348727315821588F9F0C635BEE2C /* SourceLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1209032F9B9026846B05C17994D723B3 /* SourceLocation.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
+		F81C2CD71BEC17D423D95033B101B8BB /* FZTableViewDataSourceDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2E0812D1504A316A674DA58E673D7B /* FZTableViewDataSourceDecorator.swift */; };
 		F92273C61B48AB0E00CC817DF18A4C47 /* BeLogical.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5898400AEF7989EB1C4B445B05061557 /* BeLogical.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		F9D4AB9515DB3E931E4AF493DE11895E /* ThrowError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD192718D9180DF715E2B12BD4F99324 /* ThrowError.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		FC740FFCEA8E90C8F3DB11189FD9FA9D /* Quick-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = ED05FA78925BC3E8E8D05CC3D3321291 /* Quick-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -153,33 +156,33 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		1D2F09FBC3CD03A3EA8C1143D6200B26 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C82891EAB7293DBEE916B21F57E8474D;
-			remoteInfo = Quick;
-		};
-		6E4FA5510C4FAF3CCC9697F61B0F22E7 /* PBXContainerItemProxy */ = {
+		15F152C1C8CC107B89E81A6929436997 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = A3EEDC1585A712721628E9840C0167D3;
 			remoteInfo = FZClosureScrollView;
 		};
-		AF1487A0AD8A1BFC542240526B8B468D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6F13695E06195A78EA8A95F8C7ED0D2F;
-			remoteInfo = Nimble;
-		};
-		AFD54DAC36EE986689091F755CFE962C /* PBXContainerItemProxy */ = {
+		17CE0762543ED5494F85A084FF60BF8D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = AE378D8D49EDD0CB6D026CE47FA4CF5B;
 			remoteInfo = "Pods-FZClosureScrollView_Example";
+		};
+		3339826241277A9BC1D2CF8EE9D3D2E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C82891EAB7293DBEE916B21F57E8474D;
+			remoteInfo = Quick;
+		};
+		5AA4AD17CBCFE69CEF1E6C290F9FD274 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6F13695E06195A78EA8A95F8C7ED0D2F;
+			remoteInfo = Nimble;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -194,46 +197,47 @@
 		086F10523AFF38648C15FCA6AA129C23 /* Stringers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Stringers.swift; path = Sources/Nimble/Utils/Stringers.swift; sourceTree = "<group>"; };
 		09731733D98B8FD7224447F776E75441 /* BeGreaterThanOrEqualTo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeGreaterThanOrEqualTo.swift; path = Sources/Nimble/Matchers/BeGreaterThanOrEqualTo.swift; sourceTree = "<group>"; };
 		0B0AADE582B5BD22FA91D3DAD8844B92 /* Expression.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Expression.swift; path = Sources/Nimble/Expression.swift; sourceTree = "<group>"; };
-		0CDEBC46CC14B996A787E4F41D95304E /* FZTableViewManager+DragDelegateCheck.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "FZTableViewManager+DragDelegateCheck.swift"; sourceTree = "<group>"; };
 		0D631E9908483F9525A6B3F36F16CC61 /* Quick.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Quick.framework; path = Quick.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DD3495984E50717EE5951C04EAFB788 /* Nimble-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Nimble-umbrella.h"; sourceTree = "<group>"; };
 		1014F88FBB418E7E9B24F6C3E73E89DA /* ExampleMetadata.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExampleMetadata.swift; path = Sources/Quick/ExampleMetadata.swift; sourceTree = "<group>"; };
 		10C36E789BFF17B70EC945692C82D859 /* QuickSpecBase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QuickSpecBase.m; path = Sources/QuickObjCRuntime/QuickSpecBase.m; sourceTree = "<group>"; };
 		11CD7AC874836F8DA7EC88B0872CDBAE /* SatisfyAllOf.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SatisfyAllOf.swift; path = Sources/Nimble/Matchers/SatisfyAllOf.swift; sourceTree = "<group>"; };
+		11EC5EB30D0AF7405A63053D42C0D21B /* FZTableViewManager+DataSourceCheck.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "FZTableViewManager+DataSourceCheck.swift"; sourceTree = "<group>"; };
 		1209032F9B9026846B05C17994D723B3 /* SourceLocation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SourceLocation.swift; path = Sources/Nimble/Utils/SourceLocation.swift; sourceTree = "<group>"; };
-		14CDD0FDDEA13E0BC116413817912CA8 /* FZTableViewManager+PrefetchDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "FZTableViewManager+PrefetchDataSource.swift"; sourceTree = "<group>"; };
-		16B5D6B4EB1199AD1E0AA430AB07D1A5 /* FZTableViewDataSourceDecorator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FZTableViewDataSourceDecorator.swift; sourceTree = "<group>"; };
+		15DF02D2F147CED8305101FF025460C6 /* FZClosureScrollView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FZClosureScrollView.modulemap; sourceTree = "<group>"; };
 		17550890BB023B26063ABDFE4B258145 /* SuiteHooks.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SuiteHooks.swift; path = Sources/Quick/Hooks/SuiteHooks.swift; sourceTree = "<group>"; };
 		19A3558661CEF3BE87C498E32AEC3EB0 /* Expectation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Expectation.swift; path = Sources/Nimble/Expectation.swift; sourceTree = "<group>"; };
+		19E7DB76A10781D1A3B66386A8D6A8DA /* FZClosureScrollView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FZClosureScrollView-prefix.pch"; sourceTree = "<group>"; };
 		1A80B6F8B82934D9A77E355D2A690124 /* MatcherFunc.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MatcherFunc.swift; path = Sources/Nimble/Matchers/MatcherFunc.swift; sourceTree = "<group>"; };
 		1B085943B46F49A20A9E6E3DE9F200FE /* NMBStringify.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NMBStringify.h; path = Sources/NimbleObjectiveC/NMBStringify.h; sourceTree = "<group>"; };
 		20BC702B703015135071D92F38808B56 /* Pods-FZClosureScrollView_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FZClosureScrollView_Tests-Info.plist"; sourceTree = "<group>"; };
 		21786CA4E14DF5B22AE1F35439DF21E7 /* Pods-FZClosureScrollView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FZClosureScrollView_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		23AB1B53769DF1AD51F8FC3218141CAA /* Pods-FZClosureScrollView_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FZClosureScrollView_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		25030C0A2B44B4AFE6D77A9BAAF84088 /* Configuration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Configuration.swift; path = Sources/Quick/Configuration/Configuration.swift; sourceTree = "<group>"; };
-		2611C94F22B85CC9FC0D7DDB77CA8EB3 /* FZCollectionViewManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FZCollectionViewManager.swift; sourceTree = "<group>"; };
-		26FB590D86A6F91263424BEF8F05B1EF /* FZScrollViewManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FZScrollViewManager.swift; sourceTree = "<group>"; };
+		2592F8F1964006EC13136B1D5CAB671A /* FZTableViewManager+DelegateCheck.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "FZTableViewManager+DelegateCheck.swift"; sourceTree = "<group>"; };
 		28A8FC83ADFAB68A939D061B9DA7B2C3 /* NMBExceptionCapture.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NMBExceptionCapture.h; path = Sources/NimbleObjectiveC/NMBExceptionCapture.h; sourceTree = "<group>"; };
-		28B1A04803B599BDEA7F82507461EFAE /* FZTableViewDragDelegateDecorator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FZTableViewDragDelegateDecorator.swift; sourceTree = "<group>"; };
 		2924BBEE0618BF7EC93C2C9016D0CCCA /* ThrowAssertion.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ThrowAssertion.swift; path = Sources/Nimble/Matchers/ThrowAssertion.swift; sourceTree = "<group>"; };
-		2F4593FF9FC08E3E01A4080E092448E9 /* FZCollectionViewManager+DelegateCheck.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "FZCollectionViewManager+DelegateCheck.swift"; sourceTree = "<group>"; };
+		2EB8926ABF6ADC72ED35FA11BD0F3296 /* FZTableViewManager+PrefetchDataSourceCheck.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "FZTableViewManager+PrefetchDataSourceCheck.swift"; sourceTree = "<group>"; };
 		31D2A7BBF8071BD5804407204B81FB51 /* Pods-FZClosureScrollView_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FZClosureScrollView_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		32435C410D6166FD3FF1FF89804AE5BD /* Nimble.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Nimble.release.xcconfig; sourceTree = "<group>"; };
-		38E4B488CAC312F147890C2606A86DE0 /* FZTableViewManager+DropDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "FZTableViewManager+DropDelegate.swift"; sourceTree = "<group>"; };
 		39008AE1E1CAEB0064DAD5FE36764295 /* QCKDSL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QCKDSL.h; path = Sources/QuickObjectiveC/DSL/QCKDSL.h; sourceTree = "<group>"; };
 		3B251A029086925125D7AFECE6951AB0 /* Pods_FZClosureScrollView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FZClosureScrollView_Example.framework; path = "Pods-FZClosureScrollView_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C881CEC84ECB068B626CA0243C89F5F /* Quick-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Quick-Info.plist"; sourceTree = "<group>"; };
-		3D810D08FD0412013147D0C7FDBEA25C /* FZClosureScrollView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FZClosureScrollView-umbrella.h"; sourceTree = "<group>"; };
+		3CD5603053306C537156EAEB01C3D674 /* FZTableViewManager+PrefetchDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "FZTableViewManager+PrefetchDataSource.swift"; sourceTree = "<group>"; };
 		3F792826C2A1DCA549A626F8B6BB9048 /* World.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = World.swift; path = Sources/Quick/World.swift; sourceTree = "<group>"; };
-		41A66C15D0A7692E359A8BF4E1D32983 /* FZTableViewManager+PrefetchDataSourceCheck.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "FZTableViewManager+PrefetchDataSourceCheck.swift"; sourceTree = "<group>"; };
+		4162C6D8FFB5D4CF8A3852492F8A2009 /* FZTableViewDragDelegateDecorator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FZTableViewDragDelegateDecorator.swift; sourceTree = "<group>"; };
 		42246731B3D9A2B8790893EBBD465FFF /* AssertionRecorder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AssertionRecorder.swift; path = Sources/Nimble/Adapters/AssertionRecorder.swift; sourceTree = "<group>"; };
 		431CBAEE164D12511676DF2CA2E5F6E1 /* Equal+Tuple.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Equal+Tuple.swift"; path = "Sources/Nimble/Matchers/Equal+Tuple.swift"; sourceTree = "<group>"; };
 		4533A88B2DE8230A61D3FE3F4CD5BC98 /* CwlMachBadInstructionHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CwlMachBadInstructionHandler.m; path = Carthage/Checkouts/CwlPreconditionTesting/Sources/CwlMachBadInstructionHandler/CwlMachBadInstructionHandler.m; sourceTree = "<group>"; };
 		487FC1B156A23E9FE1FB704254E44A12 /* CwlDarwinDefinitions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CwlDarwinDefinitions.swift; path = Carthage/Checkouts/CwlPreconditionTesting/Sources/CwlPreconditionTesting/CwlDarwinDefinitions.swift; sourceTree = "<group>"; };
 		4A81330D968B34C59FC40E730C91DA50 /* NMBObjCMatcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NMBObjCMatcher.swift; path = Sources/Nimble/Adapters/NMBObjCMatcher.swift; sourceTree = "<group>"; };
+		4A81B942A0BC61FCB1FC0A8293AC0FE9 /* FZScrollViewManager+Delegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "FZScrollViewManager+Delegate.swift"; sourceTree = "<group>"; };
 		4C2D1D1C6474F27A8FCC8D6856C47704 /* mach_excServer.c */ = {isa = PBXFileReference; includeInIndex = 1; name = mach_excServer.c; path = Carthage/Checkouts/CwlPreconditionTesting/Sources/CwlMachBadInstructionHandler/mach_excServer.c; sourceTree = "<group>"; };
+		4EE672459E0999CB886EF9268455E822 /* FZClosureScrollView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FZClosureScrollView-Info.plist"; sourceTree = "<group>"; };
+		510EC664E4B33A3BFB150D760B8F17DB /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		54786640730EAADE6139B51A243CA4B7 /* ExampleGroup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExampleGroup.swift; path = Sources/Quick/ExampleGroup.swift; sourceTree = "<group>"; };
 		5700BD6275F82CB443901CE97C7FBFE2 /* Callsite.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Callsite.swift; path = Sources/Quick/Callsite.swift; sourceTree = "<group>"; };
+		5802AAB22E3904CF786F5DDBF33874D2 /* FZTableViewManager+DragDelegateCheck.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "FZTableViewManager+DragDelegateCheck.swift"; sourceTree = "<group>"; };
 		5898400AEF7989EB1C4B445B05061557 /* BeLogical.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeLogical.swift; path = Sources/Nimble/Matchers/BeLogical.swift; sourceTree = "<group>"; };
 		594AC8461678969C61DB7CC4824B855D /* Pods-FZClosureScrollView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FZClosureScrollView_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		599A5A20097CA4DD27ECE4579DDE32BD /* HooksPhase.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HooksPhase.swift; path = Sources/Quick/Hooks/HooksPhase.swift; sourceTree = "<group>"; };
@@ -242,27 +246,29 @@
 		5E9D232917B7F9161AD32800BD7188F6 /* Errors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Errors.swift; path = Sources/Nimble/Utils/Errors.swift; sourceTree = "<group>"; };
 		5EBC8F300895E39EA0DF6D6B2B5E6BCD /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		5FDF855D797FF314FA501247ABF1FEC7 /* QuickTestObservation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QuickTestObservation.swift; path = Sources/Quick/QuickTestObservation.swift; sourceTree = "<group>"; };
-		653A281DC514881E535E1DE10B03935B /* FZTableViewManager+Delegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "FZTableViewManager+Delegate.swift"; sourceTree = "<group>"; };
 		6645CB0EA61CF61654A6456C637CC905 /* Nimble-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Nimble-prefix.pch"; sourceTree = "<group>"; };
 		66A05714F4E8FEA5C91ED91CC2ACA096 /* Pods-FZClosureScrollView_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FZClosureScrollView_Tests-dummy.m"; sourceTree = "<group>"; };
 		68BC691C67B0A64F7510D5C6298F4A80 /* CwlMachBadInstructionHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CwlMachBadInstructionHandler.h; path = Carthage/Checkouts/CwlPreconditionTesting/Sources/CwlMachBadInstructionHandler/include/CwlMachBadInstructionHandler.h; sourceTree = "<group>"; };
 		6971FF4FC2D354A79275D7A0E176A2EC /* Await.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Await.swift; path = Sources/Nimble/Utils/Await.swift; sourceTree = "<group>"; };
+		6A97A4D1A258AB5BDE393B546B7C2613 /* FZCollectionViewManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FZCollectionViewManager.swift; sourceTree = "<group>"; };
 		6B7283F4C347135472840AFDA74C4E5A /* PostNotification.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PostNotification.swift; path = Sources/Nimble/Matchers/PostNotification.swift; sourceTree = "<group>"; };
 		6BBB07C081853857D127942E1A50FA3E /* Pods-FZClosureScrollView_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FZClosureScrollView_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		6BBDED1DA37F40EA5DD586929E212E7B /* FZTableViewManager+DropDelegateCheck.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "FZTableViewManager+DropDelegateCheck.swift"; sourceTree = "<group>"; };
+		6D05BF09DEF04ED15C8BE49374A514C2 /* FZCollectionViewDelegateDecorator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FZCollectionViewDelegateDecorator.swift; sourceTree = "<group>"; };
 		6F83785D665E420BD19286269BD7EC46 /* Pods-FZClosureScrollView_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FZClosureScrollView_Tests-umbrella.h"; sourceTree = "<group>"; };
 		6FD90DC04A8EE437DF70BED5C4A8D946 /* DSL.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DSL.m; path = Sources/NimbleObjectiveC/DSL.m; sourceTree = "<group>"; };
 		73141CA135219B195CA9C9BBE8BC38E0 /* NimbleXCTestHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NimbleXCTestHandler.swift; path = Sources/Nimble/Adapters/NimbleXCTestHandler.swift; sourceTree = "<group>"; };
 		7425C80AFE5874C82C321C25C8FD8E4E /* BeLessThan.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeLessThan.swift; path = Sources/Nimble/Matchers/BeLessThan.swift; sourceTree = "<group>"; };
 		75423B81B53812C99CD2B45F03DB3037 /* SatisfyAnyOf.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SatisfyAnyOf.swift; path = Sources/Nimble/Matchers/SatisfyAnyOf.swift; sourceTree = "<group>"; };
 		757BAF37999C9047D1AE2770EE6A4A6E /* QuickSelectedTestSuiteBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QuickSelectedTestSuiteBuilder.swift; path = Sources/Quick/QuickSelectedTestSuiteBuilder.swift; sourceTree = "<group>"; };
-		76F06867D1513A35ABE101B9E272BAA0 /* FZTableViewManager+DataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "FZTableViewManager+DataSource.swift"; sourceTree = "<group>"; };
-		7888C58FE31BC014398B807F0A995EDA /* FZClosureScrollView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = FZClosureScrollView.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		78926642357C0B6015F5F801CC73820A /* FZScrollViewDelegateDecorator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FZScrollViewDelegateDecorator.swift; sourceTree = "<group>"; };
+		78D2F5908D6B549A698055E2D9E33F98 /* FZTableViewDelegateDecorator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FZTableViewDelegateDecorator.swift; sourceTree = "<group>"; };
 		791E6CD5C8804BBD715C9D08D4BEC854 /* BeNil.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeNil.swift; path = Sources/Nimble/Matchers/BeNil.swift; sourceTree = "<group>"; };
 		7981FC6993399F6CC88288632463A471 /* Quick.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Quick.debug.xcconfig; sourceTree = "<group>"; };
 		7984E2929E13FE9962030FA664F09CB2 /* BeVoid.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeVoid.swift; path = Sources/Nimble/Matchers/BeVoid.swift; sourceTree = "<group>"; };
 		79E8B48B526447D210636CC033206669 /* Pods-FZClosureScrollView_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FZClosureScrollView_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		7B156F310990FFB7EF8CF342F67F4B98 /* FZCollectionViewManager+Delegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "FZCollectionViewManager+Delegate.swift"; sourceTree = "<group>"; };
 		7B2EF8A720D0EAA49000115560DF7BBC /* mach_excServer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mach_excServer.h; path = Carthage/Checkouts/CwlPreconditionTesting/Sources/CwlMachBadInstructionHandler/mach_excServer.h; sourceTree = "<group>"; };
+		7B395A398BC0D59863B32B4BC99A308D /* FZCollectionViewManager+DataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "FZCollectionViewManager+DataSource.swift"; sourceTree = "<group>"; };
 		7B63A49E44A8499A1A97B90F2A37A90C /* Match.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Match.swift; path = Sources/Nimble/Matchers/Match.swift; sourceTree = "<group>"; };
 		7C42CFB5518B1F634F1B99EBB383B6B0 /* XCTestObservationCenter+Register.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "XCTestObservationCenter+Register.m"; path = "Sources/NimbleObjectiveC/XCTestObservationCenter+Register.m"; sourceTree = "<group>"; };
 		7C572C7D93AF0E9B50A517675CD4D665 /* QuickSpec.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QuickSpec.m; path = Sources/QuickObjectiveC/QuickSpec.m; sourceTree = "<group>"; };
@@ -270,100 +276,108 @@
 		7D9304D037786B05B215A100D854D943 /* MatcherProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MatcherProtocols.swift; path = Sources/Nimble/Matchers/MatcherProtocols.swift; sourceTree = "<group>"; };
 		7E30B4EFCE7868E0DBE8E364AD275301 /* MatchError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MatchError.swift; path = Sources/Nimble/Matchers/MatchError.swift; sourceTree = "<group>"; };
 		802103650A4E5841D47428C4B297B890 /* BeginWithPrefix.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeginWithPrefix.swift; path = Sources/Nimble/Matchers/BeginWithPrefix.swift; sourceTree = "<group>"; };
+		812021E389659B2CA0F7898B5701A3E4 /* FZTableViewManager+DataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "FZTableViewManager+DataSource.swift"; sourceTree = "<group>"; };
 		81545145A1C5A4394570ECEC1644AC94 /* DSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DSL.swift; path = Sources/Quick/DSL/DSL.swift; sourceTree = "<group>"; };
 		817BE9A694522F7F4026799121CBA1C7 /* NMBStringify.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NMBStringify.m; path = Sources/NimbleObjectiveC/NMBStringify.m; sourceTree = "<group>"; };
+		8526B8A0A9AAFE1492693B51857832BC /* FZCollectionViewManager+DelegateCheck.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "FZCollectionViewManager+DelegateCheck.swift"; sourceTree = "<group>"; };
 		8599C685A6E9088137A44D9BD36F320D /* DSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DSL.swift; path = Sources/Nimble/DSL.swift; sourceTree = "<group>"; };
 		85BB1858F6652DC026D80938BD29DD97 /* DispatchTimeInterval.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DispatchTimeInterval.swift; path = Sources/Nimble/Utils/DispatchTimeInterval.swift; sourceTree = "<group>"; };
 		8D419D9857BEDF4AABA8218936B3677E /* BeAnInstanceOf.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeAnInstanceOf.swift; path = Sources/Nimble/Matchers/BeAnInstanceOf.swift; sourceTree = "<group>"; };
 		8DBC6D2AE621EFFE819C69872527FCFF /* Pods-FZClosureScrollView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FZClosureScrollView_Example.release.xcconfig"; sourceTree = "<group>"; };
-		8EA2EA7DEB2E09544FC39C4DC6942DD0 /* FZTableViewManager+DropDelegateCheck.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "FZTableViewManager+DropDelegateCheck.swift"; sourceTree = "<group>"; };
-		8EF2136A87B0E3D3823EC811886002F2 /* FZTableViewDropDelegateDecorator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FZTableViewDropDelegateDecorator.swift; sourceTree = "<group>"; };
 		8FD76FF5D5F3AC8A3C06A6D3409E3405 /* Quick.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Quick.modulemap; sourceTree = "<group>"; };
+		902BBF9B2C3FA0561F11CCAC503272EB /* FZScrollViewManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FZScrollViewManager.swift; sourceTree = "<group>"; };
 		90A8B866BF1B5741F3E8FDA8E728708F /* World+DSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "World+DSL.swift"; path = "Sources/Quick/DSL/World+DSL.swift"; sourceTree = "<group>"; };
 		917DABFABA971087CC881C67BBCB896A /* QuickObjCRuntime.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QuickObjCRuntime.h; path = Sources/QuickObjCRuntime/include/QuickObjCRuntime.h; sourceTree = "<group>"; };
+		92003A81D3F5775E38F80402E4B7B1EA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		92908130014A01F433AEE156BE66A71F /* Quick.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Quick.release.xcconfig; sourceTree = "<group>"; };
-		93DF3414908859B978E230D34E3ADBA1 /* FZTableViewManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FZTableViewManager.swift; sourceTree = "<group>"; };
-		94C9F7814A395D34463D45CAF96A91A0 /* FZClosureScrollView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FZClosureScrollView.modulemap; sourceTree = "<group>"; };
+		929DE45DF4A2875AFCAD869A4DD18711 /* FZScrollViewDelegateDecorator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FZScrollViewDelegateDecorator.swift; sourceTree = "<group>"; };
 		96F8F92D4F337391CA98495AED7459FB /* BeAKindOf.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeAKindOf.swift; path = Sources/Nimble/Matchers/BeAKindOf.swift; sourceTree = "<group>"; };
-		973845D2AA8E8A33CEAD548BA2D72DC2 /* FZClosureScrollView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FZClosureScrollView.release.xcconfig; sourceTree = "<group>"; };
 		9817083983497DB3ED6001E3E97533CB /* BeGreaterThan.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeGreaterThan.swift; path = Sources/Nimble/Matchers/BeGreaterThan.swift; sourceTree = "<group>"; };
 		98AD1D4272540420383C7922F88E000E /* Nimble-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Nimble-Info.plist"; sourceTree = "<group>"; };
+		9B7EAC08621C51F58D02F8229064EE8D /* FZTableViewManager+Delegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "FZTableViewManager+Delegate.swift"; sourceTree = "<group>"; };
 		9B97ED5765C6F64ABEACE61B77B3F4DF /* Pods-FZClosureScrollView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FZClosureScrollView_Example.modulemap"; sourceTree = "<group>"; };
-		9D0C84804A9C95377A89BD61922FDEF2 /* FZTableViewDelegateDecorator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FZTableViewDelegateDecorator.swift; sourceTree = "<group>"; };
 		9D790CFC0DD27CF5E3726D13716B8457 /* String+C99ExtendedIdentifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+C99ExtendedIdentifier.swift"; path = "Sources/Quick/String+C99ExtendedIdentifier.swift"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9F5AF5E387E512FDEFD0A0FA426424BB /* FZClosureScrollView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FZClosureScrollView-prefix.pch"; sourceTree = "<group>"; };
+		9F27F1DFAB10B1FBF1D8838A032268B5 /* FZClosureScrollView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FZClosureScrollView.debug.xcconfig; sourceTree = "<group>"; };
+		9FAEA01F769784DFFC02C876476A7DAE /* FZTableViewManager+DropDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "FZTableViewManager+DropDelegate.swift"; sourceTree = "<group>"; };
 		A1E6D0F0B64E0881BB387BFDBBAEDE64 /* QuickConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QuickConfiguration.m; path = Sources/QuickObjectiveC/Configuration/QuickConfiguration.m; sourceTree = "<group>"; };
 		A45CB8950F44AB1A0713CDBB4362D6AB /* Pods-FZClosureScrollView_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FZClosureScrollView_Example-umbrella.h"; sourceTree = "<group>"; };
 		A565AB2A63D27ACF855DE572A8749763 /* Nimble-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Nimble-dummy.m"; sourceTree = "<group>"; };
 		A789DFAD27D89A0DA5B60793DB255366 /* QCKDSL.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QCKDSL.m; path = Sources/QuickObjectiveC/DSL/QCKDSL.m; sourceTree = "<group>"; };
-		A830BCAEB456AE12BACF101F05678CBC /* FZCollectionViewManager+Delegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "FZCollectionViewManager+Delegate.swift"; sourceTree = "<group>"; };
+		A8F110F8631BD47110BD7D72055BEE56 /* FZTableViewPrefetchDataSourceDecorator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FZTableViewPrefetchDataSourceDecorator.swift; sourceTree = "<group>"; };
 		A93FF845443E835A464CC0A55B6A3DD1 /* Nimble.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Nimble.modulemap; sourceTree = "<group>"; };
 		ACA8E066CB31D5BC83F54CCFE6CFD9B8 /* BeCloseTo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeCloseTo.swift; path = Sources/Nimble/Matchers/BeCloseTo.swift; sourceTree = "<group>"; };
 		ACCFB9311ED98345A6282A28A6CFAD83 /* AssertionDispatcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AssertionDispatcher.swift; path = Sources/Nimble/Adapters/AssertionDispatcher.swift; sourceTree = "<group>"; };
 		ADA676B386635A5851AD41777A665907 /* BeginWith.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeginWith.swift; path = Sources/Nimble/Matchers/BeginWith.swift; sourceTree = "<group>"; };
-		B00C57AB21FDB4C9C068A892AC3194A9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		B25751F36800946C1A1A22406B3596FE /* ToSucceed.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ToSucceed.swift; path = Sources/Nimble/Matchers/ToSucceed.swift; sourceTree = "<group>"; };
 		B3A6C6DA8267274529580FC6BB388664 /* AdapterProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AdapterProtocols.swift; path = Sources/Nimble/Adapters/AdapterProtocols.swift; sourceTree = "<group>"; };
 		B5912F55BE3AA373DBEF439FEAE802EC /* CwlCatchBadInstruction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CwlCatchBadInstruction.swift; path = Carthage/Checkouts/CwlPreconditionTesting/Sources/CwlPreconditionTesting/CwlCatchBadInstruction.swift; sourceTree = "<group>"; };
 		B778739B132B4FEC875F9615ED37CAEA /* Nimble.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Nimble.h; path = Sources/Nimble/Nimble.h; sourceTree = "<group>"; };
-		B7C4BCC12013633779E090F5C94A1CAC /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		B9973833824E7ED01540C73DCB2C1247 /* Quick-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Quick-dummy.m"; sourceTree = "<group>"; };
 		BA0087274AC5A6531F165B24C67D7A6D /* Pods-FZClosureScrollView_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FZClosureScrollView_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		BA292B7CF10985D70E455F8ED435BAD2 /* FZTableViewPrefetchDataSourceDecorator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FZTableViewPrefetchDataSourceDecorator.swift; sourceTree = "<group>"; };
 		BAE263041362D074978BB3B577DF0A05 /* Nimble.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Nimble.framework; path = Nimble.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB2DD27CB90704924D6D50162205BD97 /* ExpectationMessage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpectationMessage.swift; path = Sources/Nimble/ExpectationMessage.swift; sourceTree = "<group>"; };
+		BCE4AC91FE1FBED69A40AB853877FBAA /* FZClosureScrollView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FZClosureScrollView-dummy.m"; sourceTree = "<group>"; };
 		BEE0135D5FDA5A4415EADADB336B9246 /* FailureMessage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FailureMessage.swift; path = Sources/Nimble/FailureMessage.swift; sourceTree = "<group>"; };
+		BF2E0812D1504A316A674DA58E673D7B /* FZTableViewDataSourceDecorator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FZTableViewDataSourceDecorator.swift; sourceTree = "<group>"; };
 		C0EE0182653D00926C08100E31BD3795 /* Filter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Filter.swift; path = Sources/Quick/Filter.swift; sourceTree = "<group>"; };
 		C234427DC01A4C983F67F5875E295B28 /* CwlCatchException.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CwlCatchException.h; path = Carthage/Checkouts/CwlCatchException/Sources/CwlCatchExceptionSupport/include/CwlCatchException.h; sourceTree = "<group>"; };
-		C243B1B91C3F264DD76F290B3FE509AD /* FZTableViewManager+DragDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "FZTableViewManager+DragDelegate.swift"; sourceTree = "<group>"; };
+		C2EA624BE8ACFFA8A6F28CDE2D88C83C /* FZTableViewManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FZTableViewManager.swift; sourceTree = "<group>"; };
 		C3107E43F634AF3B221072AD06EDC701 /* Closures.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Closures.swift; path = Sources/Quick/Hooks/Closures.swift; sourceTree = "<group>"; };
 		C3862A4029F0AE7BD5D04E22605C911F /* ExampleHooks.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExampleHooks.swift; path = Sources/Quick/Hooks/ExampleHooks.swift; sourceTree = "<group>"; };
 		C398A9D17862A4A4F45ADB5FA7444E92 /* EndWith.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EndWith.swift; path = Sources/Nimble/Matchers/EndWith.swift; sourceTree = "<group>"; };
+		C537A2A89BAA649D329BE187DAABA705 /* FZCollectionViewDataSourceDecorator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FZCollectionViewDataSourceDecorator.swift; sourceTree = "<group>"; };
 		C9F5C65CA8F308F74190933D608601A6 /* CwlCatchException.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CwlCatchException.m; path = Carthage/Checkouts/CwlCatchException/Sources/CwlCatchExceptionSupport/CwlCatchException.m; sourceTree = "<group>"; };
 		CA49BABC2CC135D2B65613F5FE74A610 /* Pods-FZClosureScrollView_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FZClosureScrollView_Example-dummy.m"; sourceTree = "<group>"; };
 		CA8B94E9D3B433157168D1EECCEC11CD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		CB3DC3139A1280CF034113B965D1A718 /* CwlBadInstructionException.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CwlBadInstructionException.swift; path = Carthage/Checkouts/CwlPreconditionTesting/Sources/CwlPreconditionTesting/CwlBadInstructionException.swift; sourceTree = "<group>"; };
 		CD341C837DE8F7A0373F921D8AB212CD /* Pods_FZClosureScrollView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FZClosureScrollView_Tests.framework; path = "Pods-FZClosureScrollView_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CE81725658553F57B7DCD71C59A9D75C /* FZClosureScrollView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FZClosureScrollView.debug.xcconfig; sourceTree = "<group>"; };
 		D1CA7814D47356EA90B9ECB4FDB3F859 /* NimbleEnvironment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NimbleEnvironment.swift; path = Sources/Nimble/Adapters/NimbleEnvironment.swift; sourceTree = "<group>"; };
-		D21CB4BE77108655F04A986F88F0C5B5 /* FZTableViewManager+DataSourceCheck.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "FZTableViewManager+DataSourceCheck.swift"; sourceTree = "<group>"; };
 		D23387148BE56CC3EB877BEE9F509DA9 /* DSL+Wait.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DSL+Wait.swift"; path = "Sources/Nimble/DSL+Wait.swift"; sourceTree = "<group>"; };
 		D2CC867E16210A5E3628561E0E52DAED /* Example.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Example.swift; path = Sources/Quick/Example.swift; sourceTree = "<group>"; };
 		D864B01792C2475774D9271679F17B9A /* QuickConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QuickConfiguration.swift; path = Sources/Quick/Configuration/QuickConfiguration.swift; sourceTree = "<group>"; };
+		D9271F56DC21AF50CF489D4CA65DF481 /* FZTableViewManager+DragDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "FZTableViewManager+DragDelegate.swift"; sourceTree = "<group>"; };
 		DBCE4BA046CAEB42619707DBED53725C /* XCTestSuite+QuickTestSuiteBuilder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "XCTestSuite+QuickTestSuiteBuilder.m"; path = "Sources/QuickObjectiveC/XCTestSuite+QuickTestSuiteBuilder.m"; sourceTree = "<group>"; };
+		DC5F77C118289DA6413FEB6BCD24FE17 /* FZClosureScrollView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = FZClosureScrollView.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		DCE019B2B8EA388DCC02E5D7F82C8AEE /* FZClosureScrollView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FZClosureScrollView.release.xcconfig; sourceTree = "<group>"; };
 		DFB948AB0BB27D8BBE0624B3601F0420 /* Pods-FZClosureScrollView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FZClosureScrollView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		E0FE7DF20C0080F14BDF5F181BF2345F /* Quick.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Quick.h; path = Sources/QuickObjectiveC/Quick.h; sourceTree = "<group>"; };
 		E4097A6637537D84D28A10721A2E7EC6 /* NMBExpectation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NMBExpectation.swift; path = Sources/Nimble/Adapters/NMBExpectation.swift; sourceTree = "<group>"; };
 		E44D64C97F0EB045C86340CAD74FF65D /* CwlCatchException.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CwlCatchException.swift; path = Carthage/Checkouts/CwlCatchException/Sources/CwlCatchException/CwlCatchException.swift; sourceTree = "<group>"; };
 		E5207C4D8365FB324A7064CEAED8E497 /* NMBExceptionCapture.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NMBExceptionCapture.m; path = Sources/NimbleObjectiveC/NMBExceptionCapture.m; sourceTree = "<group>"; };
-		E6AF98D7AFE4AFC8606F5EA73875CA61 /* FZCollectionViewDelegateDecorator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FZCollectionViewDelegateDecorator.swift; sourceTree = "<group>"; };
 		E6B078FDEFF43D01A46CEC09B78FA029 /* QuickSpec.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QuickSpec.h; path = Sources/QuickObjectiveC/QuickSpec.h; sourceTree = "<group>"; };
 		E762B92915992D34CF1197690DD6C504 /* ErrorUtility.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ErrorUtility.swift; path = Sources/Quick/ErrorUtility.swift; sourceTree = "<group>"; };
 		EA20C87137C7C7A9356234D9535104D4 /* QuickConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QuickConfiguration.h; path = Sources/QuickObjectiveC/Configuration/QuickConfiguration.h; sourceTree = "<group>"; };
 		EB293BEEC38AC66C26BFE450BF27D14F /* ContainElementSatisfying.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ContainElementSatisfying.swift; path = Sources/Nimble/Matchers/ContainElementSatisfying.swift; sourceTree = "<group>"; };
 		EC7C9BFBE17C3F91CEB7AEF368D4BF50 /* Behavior.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Behavior.swift; path = Sources/Quick/Behavior.swift; sourceTree = "<group>"; };
-		EC9F8DADA2E32F45E19C64E932845CE3 /* FZScrollViewManager+Delegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "FZScrollViewManager+Delegate.swift"; sourceTree = "<group>"; };
 		ED05FA78925BC3E8E8D05CC3D3321291 /* Quick-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Quick-umbrella.h"; sourceTree = "<group>"; };
+		ED7A9BFA1C76F56031E927F6D021896D /* FZCollectionViewManager+DataSourceCheck.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "FZCollectionViewManager+DataSourceCheck.swift"; sourceTree = "<group>"; };
 		EE1084644F0D76460AE1B5228F61568D /* Pods-FZClosureScrollView_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FZClosureScrollView_Example-Info.plist"; sourceTree = "<group>"; };
 		EEB539966A7AFD5CB6811DAA9B761F1B /* Contain.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Contain.swift; path = Sources/Nimble/Matchers/Contain.swift; sourceTree = "<group>"; };
 		F01872A5724C80F9F66F85BE505EF41E /* BeLessThanOrEqual.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeLessThanOrEqual.swift; path = Sources/Nimble/Matchers/BeLessThanOrEqual.swift; sourceTree = "<group>"; };
 		F0CC2D566D5FDF7981081C8C4D3648C2 /* HaveCount.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HaveCount.swift; path = Sources/Nimble/Matchers/HaveCount.swift; sourceTree = "<group>"; };
 		F3BCBA1C702CFFCA8B750E9B87F9AB38 /* Pods-FZClosureScrollView_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FZClosureScrollView_Tests.modulemap"; sourceTree = "<group>"; };
-		F806AEA0A326D7508B94AD855AA1B9C5 /* FZClosureScrollView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FZClosureScrollView-Info.plist"; sourceTree = "<group>"; };
-		FB67281B8246E35ADB5B6F44BFFCC162 /* FZTableViewManager+DelegateCheck.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "FZTableViewManager+DelegateCheck.swift"; sourceTree = "<group>"; };
+		F6C30F1972BC45C0BA76DDE6920FA476 /* FZClosureScrollView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FZClosureScrollView-umbrella.h"; sourceTree = "<group>"; };
 		FB69E074D53782BE2F1E1AEC1CAA6797 /* NSBundle+CurrentTestBundle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSBundle+CurrentTestBundle.swift"; path = "Sources/Quick/NSBundle+CurrentTestBundle.swift"; sourceTree = "<group>"; };
 		FCA2F2ED2C8A41C278097D187DEBE989 /* QuickSpecBase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QuickSpecBase.h; path = Sources/QuickObjCRuntime/include/QuickSpecBase.h; sourceTree = "<group>"; };
 		FD192718D9180DF715E2B12BD4F99324 /* ThrowError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ThrowError.swift; path = Sources/Nimble/Matchers/ThrowError.swift; sourceTree = "<group>"; };
 		FD69990709ED1315032AA1A075A30E4A /* Async.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Async.swift; path = Sources/Nimble/Matchers/Async.swift; sourceTree = "<group>"; };
 		FDB97E529E69C80140CF90C16575922D /* DSL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DSL.h; path = Sources/NimbleObjectiveC/DSL.h; sourceTree = "<group>"; };
-		FDF8124D810FB453E99526DDEDA263F8 /* FZClosureScrollView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FZClosureScrollView-dummy.m"; sourceTree = "<group>"; };
 		FE05B0AC3FA989A47A0C2BCE00A237B9 /* Predicate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Predicate.swift; path = Sources/Nimble/Matchers/Predicate.swift; sourceTree = "<group>"; };
 		FE5808B9A93D2F619B1FB8E6A7D46F1C /* RaisesException.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RaisesException.swift; path = Sources/Nimble/Matchers/RaisesException.swift; sourceTree = "<group>"; };
 		FECCD0DFA1B5AC88BE310179E43A5722 /* AllPass.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AllPass.swift; path = Sources/Nimble/Matchers/AllPass.swift; sourceTree = "<group>"; };
+		FF5016C48852F8B4026672D85B1044D3 /* FZTableViewDropDelegateDecorator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FZTableViewDropDelegateDecorator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		4888F5FD836107BDAF2D4394959A7815 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE0DF5105FF00E5C21BC359AC9B0F95C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		697CF14C36D1C959756A9A1B4A89553D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -397,36 +411,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E8FEC34BC2167BB37DEB3A61B8A3931C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F31C80E8677E06972ED0F62CA1A597B1 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		07B75AFCFE9675B1A74ACA1F62081BCD /* FZTableViewDataSource */ = {
+		04DA9E7D413406221DB5E24DF31C87B9 /* FZCollectionView */ = {
 			isa = PBXGroup;
 			children = (
-				16B5D6B4EB1199AD1E0AA430AB07D1A5 /* FZTableViewDataSourceDecorator.swift */,
-				76F06867D1513A35ABE101B9E272BAA0 /* FZTableViewManager+DataSource.swift */,
-				D21CB4BE77108655F04A986F88F0C5B5 /* FZTableViewManager+DataSourceCheck.swift */,
+				6A97A4D1A258AB5BDE393B546B7C2613 /* FZCollectionViewManager.swift */,
+				61BE5F402CF82509D9ADEE3297B11BE3 /* FZCollectionViewDataSource */,
+				1D533636E1CB180870DF872721501BFC /* FZCollectionViewDelegate */,
 			);
-			name = FZTableViewDataSource;
-			path = FZTableViewDataSource;
-			sourceTree = "<group>";
-		};
-		093A1DCE80FEF8D2CE64CDB32BFEBB16 /* FZScrollView */ = {
-			isa = PBXGroup;
-			children = (
-				26FB590D86A6F91263424BEF8F05B1EF /* FZScrollViewManager.swift */,
-				EBFBE5FBBF3C5C632B7D3B1139FC227A /* FZScrollViewDelegate */,
-			);
-			name = FZScrollView;
-			path = FZClosureScrollView/Classes/FZScrollView;
+			name = FZCollectionView;
+			path = FZClosureScrollView/Classes/FZCollectionView;
 			sourceTree = "<group>";
 		};
 		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
@@ -437,28 +433,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		1A04719E946A402585AB8966F929755D /* FZClosureScrollView */ = {
+		1D533636E1CB180870DF872721501BFC /* FZCollectionViewDelegate */ = {
 			isa = PBXGroup;
 			children = (
-				A60D4BE4868291E68959EE258A21CA5D /* FZCollectionView */,
-				093A1DCE80FEF8D2CE64CDB32BFEBB16 /* FZScrollView */,
-				E3A38F514484DBEF4FB33BB248B22058 /* FZTableView */,
-				873EEE06B98DEF8AF12CAF68CF14675A /* Pod */,
-				D33E7C8308ED45E8D3D85779ED520E19 /* Support Files */,
+				6D05BF09DEF04ED15C8BE49374A514C2 /* FZCollectionViewDelegateDecorator.swift */,
+				7B156F310990FFB7EF8CF342F67F4B98 /* FZCollectionViewManager+Delegate.swift */,
+				8526B8A0A9AAFE1492693B51857832BC /* FZCollectionViewManager+DelegateCheck.swift */,
 			);
-			name = FZClosureScrollView;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		1C5A0DE8DC160B6C12D68EB5B2BAC858 /* FZTableViewPrefetchDataSource */ = {
-			isa = PBXGroup;
-			children = (
-				14CDD0FDDEA13E0BC116413817912CA8 /* FZTableViewManager+PrefetchDataSource.swift */,
-				41A66C15D0A7692E359A8BF4E1D32983 /* FZTableViewManager+PrefetchDataSourceCheck.swift */,
-				BA292B7CF10985D70E455F8ED435BAD2 /* FZTableViewPrefetchDataSourceDecorator.swift */,
-			);
-			name = FZTableViewPrefetchDataSource;
-			path = FZTableViewPrefetchDataSource;
+			name = FZCollectionViewDelegate;
+			path = FZCollectionViewDelegate;
 			sourceTree = "<group>";
 		};
 		234920750B70631E944AAFECC3A3E59F /* Nimble */ = {
@@ -558,6 +541,20 @@
 			path = "Target Support Files/Pods-FZClosureScrollView_Example";
 			sourceTree = "<group>";
 		};
+		4C91BA1D36B0BAFC320381194C0AA6F4 /* FZTableView */ = {
+			isa = PBXGroup;
+			children = (
+				C2EA624BE8ACFFA8A6F28CDE2D88C83C /* FZTableViewManager.swift */,
+				64AABE0D668CD9B37CDCE9AE3BFCFE43 /* FZTableViewDataSource */,
+				5F4889AEFFB17A7A0011F5EFACE6494B /* FZTableViewDelegate */,
+				C1476EDC89E6E5E3E863EAB944302660 /* FZTableViewDragDelegate */,
+				9081E2DF5F9F2F8BB0C999C7D2255FAA /* FZTableViewDropDelegate */,
+				66A62CFB5F0FE9B7B40453B769C9C9A5 /* FZTableViewPrefetchDataSource */,
+			);
+			name = FZTableView;
+			path = FZClosureScrollView/Classes/FZTableView;
+			sourceTree = "<group>";
+		};
 		5E5757EBADB7784C3F3A9CAA043B4E9B /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -573,6 +570,50 @@
 			path = "../Target Support Files/Quick";
 			sourceTree = "<group>";
 		};
+		5F4889AEFFB17A7A0011F5EFACE6494B /* FZTableViewDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				78D2F5908D6B549A698055E2D9E33F98 /* FZTableViewDelegateDecorator.swift */,
+				9B7EAC08621C51F58D02F8229064EE8D /* FZTableViewManager+Delegate.swift */,
+				2592F8F1964006EC13136B1D5CAB671A /* FZTableViewManager+DelegateCheck.swift */,
+			);
+			name = FZTableViewDelegate;
+			path = FZTableViewDelegate;
+			sourceTree = "<group>";
+		};
+		61BE5F402CF82509D9ADEE3297B11BE3 /* FZCollectionViewDataSource */ = {
+			isa = PBXGroup;
+			children = (
+				C537A2A89BAA649D329BE187DAABA705 /* FZCollectionViewDataSourceDecorator.swift */,
+				7B395A398BC0D59863B32B4BC99A308D /* FZCollectionViewManager+DataSource.swift */,
+				ED7A9BFA1C76F56031E927F6D021896D /* FZCollectionViewManager+DataSourceCheck.swift */,
+			);
+			name = FZCollectionViewDataSource;
+			path = FZCollectionViewDataSource;
+			sourceTree = "<group>";
+		};
+		64AABE0D668CD9B37CDCE9AE3BFCFE43 /* FZTableViewDataSource */ = {
+			isa = PBXGroup;
+			children = (
+				BF2E0812D1504A316A674DA58E673D7B /* FZTableViewDataSourceDecorator.swift */,
+				812021E389659B2CA0F7898B5701A3E4 /* FZTableViewManager+DataSource.swift */,
+				11EC5EB30D0AF7405A63053D42C0D21B /* FZTableViewManager+DataSourceCheck.swift */,
+			);
+			name = FZTableViewDataSource;
+			path = FZTableViewDataSource;
+			sourceTree = "<group>";
+		};
+		66A62CFB5F0FE9B7B40453B769C9C9A5 /* FZTableViewPrefetchDataSource */ = {
+			isa = PBXGroup;
+			children = (
+				3CD5603053306C537156EAEB01C3D674 /* FZTableViewManager+PrefetchDataSource.swift */,
+				2EB8926ABF6ADC72ED35FA11BD0F3296 /* FZTableViewManager+PrefetchDataSourceCheck.swift */,
+				A8F110F8631BD47110BD7D72055BEE56 /* FZTableViewPrefetchDataSourceDecorator.swift */,
+			);
+			name = FZTableViewPrefetchDataSource;
+			path = FZTableViewPrefetchDataSource;
+			sourceTree = "<group>";
+		};
 		6E0323827463CBFCBC2B36970A8BC51F /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -580,16 +621,6 @@
 				8929FACA41FBFD136CDFAA2BE725CD97 /* Pods-FZClosureScrollView_Tests */,
 			);
 			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		873EEE06B98DEF8AF12CAF68CF14675A /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				7888C58FE31BC014398B807F0A995EDA /* FZClosureScrollView.podspec */,
-				B00C57AB21FDB4C9C068A892AC3194A9 /* LICENSE */,
-				B7C4BCC12013633779E090F5C94A1CAC /* README.md */,
-			);
-			name = Pod;
 			sourceTree = "<group>";
 		};
 		8929FACA41FBFD136CDFAA2BE725CD97 /* Pods-FZClosureScrollView_Tests */ = {
@@ -609,15 +640,25 @@
 			path = "Target Support Files/Pods-FZClosureScrollView_Tests";
 			sourceTree = "<group>";
 		};
-		8F17452B4BADA296C83CCCA6498B8636 /* FZTableViewDelegate */ = {
+		899AA882A5B8A337232554618747DEA6 /* FZScrollView */ = {
 			isa = PBXGroup;
 			children = (
-				9D0C84804A9C95377A89BD61922FDEF2 /* FZTableViewDelegateDecorator.swift */,
-				653A281DC514881E535E1DE10B03935B /* FZTableViewManager+Delegate.swift */,
-				FB67281B8246E35ADB5B6F44BFFCC162 /* FZTableViewManager+DelegateCheck.swift */,
+				902BBF9B2C3FA0561F11CCAC503272EB /* FZScrollViewManager.swift */,
+				9786F0E18FCD13D955265F6CC0077269 /* FZScrollViewDelegate */,
 			);
-			name = FZTableViewDelegate;
-			path = FZTableViewDelegate;
+			name = FZScrollView;
+			path = FZClosureScrollView/Classes/FZScrollView;
+			sourceTree = "<group>";
+		};
+		9081E2DF5F9F2F8BB0C999C7D2255FAA /* FZTableViewDropDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				FF5016C48852F8B4026672D85B1044D3 /* FZTableViewDropDelegateDecorator.swift */,
+				9FAEA01F769784DFFC02C876476A7DAE /* FZTableViewManager+DropDelegate.swift */,
+				6BBDED1DA37F40EA5DD586929E212E7B /* FZTableViewManager+DropDelegateCheck.swift */,
+			);
+			name = FZTableViewDropDelegate;
+			path = FZTableViewDropDelegate;
 			sourceTree = "<group>";
 		};
 		974814B39C0012DECD183BBB91B32103 /* iOS */ = {
@@ -629,33 +670,22 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		9786F0E18FCD13D955265F6CC0077269 /* FZScrollViewDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				929DE45DF4A2875AFCAD869A4DD18711 /* FZScrollViewDelegateDecorator.swift */,
+				4A81B942A0BC61FCB1FC0A8293AC0FE9 /* FZScrollViewManager+Delegate.swift */,
+			);
+			name = FZScrollViewDelegate;
+			path = FZScrollViewDelegate;
+			sourceTree = "<group>";
+		};
 		9C455B44C70AD4FA175175802FF122C9 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				1A04719E946A402585AB8966F929755D /* FZClosureScrollView */,
+				CE56F7A676484A61F39B0FB367345713 /* FZClosureScrollView */,
 			);
 			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		A5010BAB8BED75F9957EF68932B8D358 /* FZTableViewDropDelegate */ = {
-			isa = PBXGroup;
-			children = (
-				8EF2136A87B0E3D3823EC811886002F2 /* FZTableViewDropDelegateDecorator.swift */,
-				38E4B488CAC312F147890C2606A86DE0 /* FZTableViewManager+DropDelegate.swift */,
-				8EA2EA7DEB2E09544FC39C4DC6942DD0 /* FZTableViewManager+DropDelegateCheck.swift */,
-			);
-			name = FZTableViewDropDelegate;
-			path = FZTableViewDropDelegate;
-			sourceTree = "<group>";
-		};
-		A60D4BE4868291E68959EE258A21CA5D /* FZCollectionView */ = {
-			isa = PBXGroup;
-			children = (
-				2611C94F22B85CC9FC0D7DDB77CA8EB3 /* FZCollectionViewManager.swift */,
-				E202A1C9E22558FFD46D8F4974488A66 /* FZCollectionViewDelegate */,
-			);
-			name = FZCollectionView;
-			path = FZClosureScrollView/Classes/FZCollectionView;
 			sourceTree = "<group>";
 		};
 		ABA43AB4F61A97F7C6B437DC684609E1 /* Quick */ = {
@@ -700,17 +730,6 @@
 			path = Quick;
 			sourceTree = "<group>";
 		};
-		B0729932A6188F4966FD03FE5DFDB5BA /* FZTableViewDragDelegate */ = {
-			isa = PBXGroup;
-			children = (
-				28B1A04803B599BDEA7F82507461EFAE /* FZTableViewDragDelegateDecorator.swift */,
-				C243B1B91C3F264DD76F290B3FE509AD /* FZTableViewManager+DragDelegate.swift */,
-				0CDEBC46CC14B996A787E4F41D95304E /* FZTableViewManager+DragDelegateCheck.swift */,
-			);
-			name = FZTableViewDragDelegate;
-			path = FZTableViewDragDelegate;
-			sourceTree = "<group>";
-		};
 		B1CD945258BCD02FC93042DE4F0EA24C /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -732,6 +751,45 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		C1476EDC89E6E5E3E863EAB944302660 /* FZTableViewDragDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				4162C6D8FFB5D4CF8A3852492F8A2009 /* FZTableViewDragDelegateDecorator.swift */,
+				D9271F56DC21AF50CF489D4CA65DF481 /* FZTableViewManager+DragDelegate.swift */,
+				5802AAB22E3904CF786F5DDBF33874D2 /* FZTableViewManager+DragDelegateCheck.swift */,
+			);
+			name = FZTableViewDragDelegate;
+			path = FZTableViewDragDelegate;
+			sourceTree = "<group>";
+		};
+		CC2E9A0AC9A7F4A481C6C413B647A856 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				15DF02D2F147CED8305101FF025460C6 /* FZClosureScrollView.modulemap */,
+				BCE4AC91FE1FBED69A40AB853877FBAA /* FZClosureScrollView-dummy.m */,
+				4EE672459E0999CB886EF9268455E822 /* FZClosureScrollView-Info.plist */,
+				19E7DB76A10781D1A3B66386A8D6A8DA /* FZClosureScrollView-prefix.pch */,
+				F6C30F1972BC45C0BA76DDE6920FA476 /* FZClosureScrollView-umbrella.h */,
+				9F27F1DFAB10B1FBF1D8838A032268B5 /* FZClosureScrollView.debug.xcconfig */,
+				DCE019B2B8EA388DCC02E5D7F82C8AEE /* FZClosureScrollView.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/FZClosureScrollView";
+			sourceTree = "<group>";
+		};
+		CE56F7A676484A61F39B0FB367345713 /* FZClosureScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				04DA9E7D413406221DB5E24DF31C87B9 /* FZCollectionView */,
+				899AA882A5B8A337232554618747DEA6 /* FZScrollView */,
+				4C91BA1D36B0BAFC320381194C0AA6F4 /* FZTableView */,
+				E082EABC254F77E41D560490A4382345 /* Pod */,
+				CC2E9A0AC9A7F4A481C6C413B647A856 /* Support Files */,
+			);
+			name = FZClosureScrollView;
+			path = ../..;
+			sourceTree = "<group>";
+		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
@@ -744,54 +802,14 @@
 			);
 			sourceTree = "<group>";
 		};
-		D33E7C8308ED45E8D3D85779ED520E19 /* Support Files */ = {
+		E082EABC254F77E41D560490A4382345 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				94C9F7814A395D34463D45CAF96A91A0 /* FZClosureScrollView.modulemap */,
-				FDF8124D810FB453E99526DDEDA263F8 /* FZClosureScrollView-dummy.m */,
-				F806AEA0A326D7508B94AD855AA1B9C5 /* FZClosureScrollView-Info.plist */,
-				9F5AF5E387E512FDEFD0A0FA426424BB /* FZClosureScrollView-prefix.pch */,
-				3D810D08FD0412013147D0C7FDBEA25C /* FZClosureScrollView-umbrella.h */,
-				CE81725658553F57B7DCD71C59A9D75C /* FZClosureScrollView.debug.xcconfig */,
-				973845D2AA8E8A33CEAD548BA2D72DC2 /* FZClosureScrollView.release.xcconfig */,
+				DC5F77C118289DA6413FEB6BCD24FE17 /* FZClosureScrollView.podspec */,
+				92003A81D3F5775E38F80402E4B7B1EA /* LICENSE */,
+				510EC664E4B33A3BFB150D760B8F17DB /* README.md */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/FZClosureScrollView";
-			sourceTree = "<group>";
-		};
-		E202A1C9E22558FFD46D8F4974488A66 /* FZCollectionViewDelegate */ = {
-			isa = PBXGroup;
-			children = (
-				E6AF98D7AFE4AFC8606F5EA73875CA61 /* FZCollectionViewDelegateDecorator.swift */,
-				A830BCAEB456AE12BACF101F05678CBC /* FZCollectionViewManager+Delegate.swift */,
-				2F4593FF9FC08E3E01A4080E092448E9 /* FZCollectionViewManager+DelegateCheck.swift */,
-			);
-			name = FZCollectionViewDelegate;
-			path = FZCollectionViewDelegate;
-			sourceTree = "<group>";
-		};
-		E3A38F514484DBEF4FB33BB248B22058 /* FZTableView */ = {
-			isa = PBXGroup;
-			children = (
-				93DF3414908859B978E230D34E3ADBA1 /* FZTableViewManager.swift */,
-				07B75AFCFE9675B1A74ACA1F62081BCD /* FZTableViewDataSource */,
-				8F17452B4BADA296C83CCCA6498B8636 /* FZTableViewDelegate */,
-				B0729932A6188F4966FD03FE5DFDB5BA /* FZTableViewDragDelegate */,
-				A5010BAB8BED75F9957EF68932B8D358 /* FZTableViewDropDelegate */,
-				1C5A0DE8DC160B6C12D68EB5B2BAC858 /* FZTableViewPrefetchDataSource */,
-			);
-			name = FZTableView;
-			path = FZClosureScrollView/Classes/FZTableView;
-			sourceTree = "<group>";
-		};
-		EBFBE5FBBF3C5C632B7D3B1139FC227A /* FZScrollViewDelegate */ = {
-			isa = PBXGroup;
-			children = (
-				78926642357C0B6015F5F801CC73820A /* FZScrollViewDelegateDecorator.swift */,
-				EC9F8DADA2E32F45E19C64E932845CE3 /* FZScrollViewManager+Delegate.swift */,
-			);
-			name = FZScrollViewDelegate;
-			path = FZScrollViewDelegate;
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		F923BB2138842707ACB953DF108B2BFC /* Support Files */ = {
@@ -812,11 +830,11 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		1C7559F69FB94D1E8A92D22FBD2D51A2 /* Headers */ = {
+		3EFD64B6E97B3BBDC4B6B04F79C71716 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F70F585357FB879BAF2221E9356CFD5 /* FZClosureScrollView-umbrella.h in Headers */,
+				02218680598460F0AD519EDDB3F3A9F2 /* FZClosureScrollView-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -888,12 +906,12 @@
 		};
 		A3EEDC1585A712721628E9840C0167D3 /* FZClosureScrollView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8C14FD8A5E9D338B14856632A2F681A4 /* Build configuration list for PBXNativeTarget "FZClosureScrollView" */;
+			buildConfigurationList = E5AFE9541145B1427345294CC28771DC /* Build configuration list for PBXNativeTarget "FZClosureScrollView" */;
 			buildPhases = (
-				1C7559F69FB94D1E8A92D22FBD2D51A2 /* Headers */,
-				C9352A7B250F4BEAE78673ED670A5D98 /* Sources */,
-				E8FEC34BC2167BB37DEB3A61B8A3931C /* Frameworks */,
-				45C65459BDAC15F0480DD77F9E0CA225 /* Resources */,
+				3EFD64B6E97B3BBDC4B6B04F79C71716 /* Headers */,
+				DC021E03A55C5EC7E59667A7D6D2C794 /* Sources */,
+				4888F5FD836107BDAF2D4394959A7815 /* Frameworks */,
+				6F9763028BD51DB9D830C5B29A8EA82D /* Resources */,
 			);
 			buildRules = (
 			);
@@ -916,7 +934,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				EE4C1AFC7A385843BE6D7B1ABC740D12 /* PBXTargetDependency */,
+				66E9C775C6FEC6AE16A353406A87510B /* PBXTargetDependency */,
 			);
 			name = "Pods-FZClosureScrollView_Example";
 			productName = "Pods-FZClosureScrollView_Example";
@@ -953,9 +971,9 @@
 			buildRules = (
 			);
 			dependencies = (
-				98B8979F498D669581F5DBDBF948CFCE /* PBXTargetDependency */,
-				1ECB17F52CE66065DD8D18E7C6754829 /* PBXTargetDependency */,
-				A601465099FE3A5780B4E9CF41BF16E1 /* PBXTargetDependency */,
+				72E0BDA51DAFAF189D0C140718AADF71 /* PBXTargetDependency */,
+				3A5652767307E5C4691180F140CABD75 /* PBXTargetDependency */,
+				2FE58B3DF11ADA3309DF7E223A1A4BB9 /* PBXTargetDependency */,
 			);
 			name = "Pods-FZClosureScrollView_Tests";
 			productName = "Pods-FZClosureScrollView_Tests";
@@ -1015,7 +1033,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		45C65459BDAC15F0480DD77F9E0CA225 /* Resources */ = {
+		6F9763028BD51DB9D830C5B29A8EA82D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1112,34 +1130,37 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C9352A7B250F4BEAE78673ED670A5D98 /* Sources */ = {
+		DC021E03A55C5EC7E59667A7D6D2C794 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C4932E43DB9B212376190595C0C3117 /* FZClosureScrollView-dummy.m in Sources */,
-				969E5EA660A05F41F8ED595A82FC7C0E /* FZCollectionViewDelegateDecorator.swift in Sources */,
-				1F095F0C6A98A996576D0AE8E80AE6B8 /* FZCollectionViewManager+Delegate.swift in Sources */,
-				5080F7E2E94961B1A2D8FE7F5099E0C9 /* FZCollectionViewManager+DelegateCheck.swift in Sources */,
-				771EB2B30E5BBDB9DF380990785273A6 /* FZCollectionViewManager.swift in Sources */,
-				EC8DDF160B6A51AFDCEA96190727847C /* FZScrollViewDelegateDecorator.swift in Sources */,
-				3F26E549548AFC238CC31109CEF052F0 /* FZScrollViewManager+Delegate.swift in Sources */,
-				97347574A5914A438B16F4B57130E0B6 /* FZScrollViewManager.swift in Sources */,
-				13CA64FA186DA0574402C2534641F826 /* FZTableViewDataSourceDecorator.swift in Sources */,
-				2F4B54F8C8B5D2EB3FFCF77D7D1E2021 /* FZTableViewDelegateDecorator.swift in Sources */,
-				0305DF0EA666B5D5C3F9FD2AAE5DF8C2 /* FZTableViewDragDelegateDecorator.swift in Sources */,
-				A4B92FFB2140FCC783C55ADC2F4C4F85 /* FZTableViewDropDelegateDecorator.swift in Sources */,
-				D542C83024132003AFD0726E8A638323 /* FZTableViewManager+DataSource.swift in Sources */,
-				2BF5B10571C388B7A0DBABD438538664 /* FZTableViewManager+DataSourceCheck.swift in Sources */,
-				A79C238DCE2A121DE8308D676038064F /* FZTableViewManager+Delegate.swift in Sources */,
-				6829D5D1C29D204934DC1EB4428DC0BC /* FZTableViewManager+DelegateCheck.swift in Sources */,
-				9AC7363DDF1C4188FFA8EF82D658EC51 /* FZTableViewManager+DragDelegate.swift in Sources */,
-				0A98FFD39C646113ADF97DA1B46B5C33 /* FZTableViewManager+DragDelegateCheck.swift in Sources */,
-				454984D7A7BC06767EDB0D5350236BCB /* FZTableViewManager+DropDelegate.swift in Sources */,
-				1662CA3F2AF3A878CFE40EBB839F4463 /* FZTableViewManager+DropDelegateCheck.swift in Sources */,
-				D73A471834F39929317A108F0182326B /* FZTableViewManager+PrefetchDataSource.swift in Sources */,
-				51238FFB91E0ADAADEFE14D96E067019 /* FZTableViewManager+PrefetchDataSourceCheck.swift in Sources */,
-				D767A81875FBF3CF0E050FCCA5F2AC26 /* FZTableViewManager.swift in Sources */,
-				6958E3702C9846A7BBA329124EB142A7 /* FZTableViewPrefetchDataSourceDecorator.swift in Sources */,
+				9458951F8ED1A0AACD5BAE4055106B0F /* FZClosureScrollView-dummy.m in Sources */,
+				4766F75DC3E98597721AAE6059E782D7 /* FZCollectionViewDataSourceDecorator.swift in Sources */,
+				D602E867E2DD84BA4E254CE63A9116BF /* FZCollectionViewDelegateDecorator.swift in Sources */,
+				EC06AF47072BFB7005A4F47FBF3409BA /* FZCollectionViewManager+DataSource.swift in Sources */,
+				20F78CB5B82DB61EB160D1F5FA75ADD7 /* FZCollectionViewManager+DataSourceCheck.swift in Sources */,
+				681C0F03626372C05906F76A2D5464AC /* FZCollectionViewManager+Delegate.swift in Sources */,
+				19C545D801588524D963B93144DAC136 /* FZCollectionViewManager+DelegateCheck.swift in Sources */,
+				2C13D92808E50B367272B6045E00BA86 /* FZCollectionViewManager.swift in Sources */,
+				AC11840650F6DD74802D0D5BA6516C82 /* FZScrollViewDelegateDecorator.swift in Sources */,
+				0029D156CECE2415359C30F5CD6B9F2A /* FZScrollViewManager+Delegate.swift in Sources */,
+				E07839190CDDC68B6786AEF51D399737 /* FZScrollViewManager.swift in Sources */,
+				F81C2CD71BEC17D423D95033B101B8BB /* FZTableViewDataSourceDecorator.swift in Sources */,
+				A11226A7D7A6222F243D646780518A60 /* FZTableViewDelegateDecorator.swift in Sources */,
+				6614A019110DBD293E220F7EF3853A88 /* FZTableViewDragDelegateDecorator.swift in Sources */,
+				C689F2445B7424BEA1450255C1941AC6 /* FZTableViewDropDelegateDecorator.swift in Sources */,
+				8451AE9C9F62E30506CAB3AEA8CDFECB /* FZTableViewManager+DataSource.swift in Sources */,
+				9D9163BA1D697C1052DB0A1B5BFE0725 /* FZTableViewManager+DataSourceCheck.swift in Sources */,
+				023A3671B1D63D7399CE64FD00A88B2B /* FZTableViewManager+Delegate.swift in Sources */,
+				0138901B8868BB619BC21127173591A0 /* FZTableViewManager+DelegateCheck.swift in Sources */,
+				A0056B2C75C2C96BEB301DC0225F8EFB /* FZTableViewManager+DragDelegate.swift in Sources */,
+				578A0812793CBED22D7FAE4A3E613811 /* FZTableViewManager+DragDelegateCheck.swift in Sources */,
+				4487D9D631165CED31D8656E1EA2BEBC /* FZTableViewManager+DropDelegate.swift in Sources */,
+				B0A630207D8F196752CD42D089505DB6 /* FZTableViewManager+DropDelegateCheck.swift in Sources */,
+				CFF52CAB0C4CC20A19880581E5F5A808 /* FZTableViewManager+PrefetchDataSource.swift in Sources */,
+				D474292569E5F3C3456F3C5B9DBE661A /* FZTableViewManager+PrefetchDataSourceCheck.swift in Sources */,
+				DCC0FA809DDC8FD838F0ED892E6FE140 /* FZTableViewManager.swift in Sources */,
+				DAD72998C083BC1DDD573464A009BD8B /* FZTableViewPrefetchDataSourceDecorator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1189,33 +1210,63 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		1ECB17F52CE66065DD8D18E7C6754829 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-FZClosureScrollView_Example";
-			target = AE378D8D49EDD0CB6D026CE47FA4CF5B /* Pods-FZClosureScrollView_Example */;
-			targetProxy = AFD54DAC36EE986689091F755CFE962C /* PBXContainerItemProxy */;
-		};
-		98B8979F498D669581F5DBDBF948CFCE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Nimble;
-			target = 6F13695E06195A78EA8A95F8C7ED0D2F /* Nimble */;
-			targetProxy = AF1487A0AD8A1BFC542240526B8B468D /* PBXContainerItemProxy */;
-		};
-		A601465099FE3A5780B4E9CF41BF16E1 /* PBXTargetDependency */ = {
+		2FE58B3DF11ADA3309DF7E223A1A4BB9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Quick;
 			target = C82891EAB7293DBEE916B21F57E8474D /* Quick */;
-			targetProxy = 1D2F09FBC3CD03A3EA8C1143D6200B26 /* PBXContainerItemProxy */;
+			targetProxy = 3339826241277A9BC1D2CF8EE9D3D2E8 /* PBXContainerItemProxy */;
 		};
-		EE4C1AFC7A385843BE6D7B1ABC740D12 /* PBXTargetDependency */ = {
+		3A5652767307E5C4691180F140CABD75 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-FZClosureScrollView_Example";
+			target = AE378D8D49EDD0CB6D026CE47FA4CF5B /* Pods-FZClosureScrollView_Example */;
+			targetProxy = 17CE0762543ED5494F85A084FF60BF8D /* PBXContainerItemProxy */;
+		};
+		66E9C775C6FEC6AE16A353406A87510B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = FZClosureScrollView;
 			target = A3EEDC1585A712721628E9840C0167D3 /* FZClosureScrollView */;
-			targetProxy = 6E4FA5510C4FAF3CCC9697F61B0F22E7 /* PBXContainerItemProxy */;
+			targetProxy = 15F152C1C8CC107B89E81A6929436997 /* PBXContainerItemProxy */;
+		};
+		72E0BDA51DAFAF189D0C140718AADF71 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Nimble;
+			target = 6F13695E06195A78EA8A95F8C7ED0D2F /* Nimble */;
+			targetProxy = 5AA4AD17CBCFE69CEF1E6C290F9FD274 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		04BE359AA98742CCD5C460C4D4FA812B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F27F1DFAB10B1FBF1D8838A032268B5 /* FZClosureScrollView.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FZClosureScrollView/FZClosureScrollView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FZClosureScrollView/FZClosureScrollView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FZClosureScrollView/FZClosureScrollView.modulemap";
+				PRODUCT_MODULE_NAME = FZClosureScrollView;
+				PRODUCT_NAME = FZClosureScrollView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		1BE896599ECA988957DE5D87A9AB9C3C /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 21786CA4E14DF5B22AE1F35439DF21E7 /* Pods-FZClosureScrollView_Tests.release.xcconfig */;
@@ -1562,39 +1613,9 @@
 			};
 			name = Release;
 		};
-		CF3D784FB1A7CCD6FEB0A67A9AC1C5D8 /* Debug */ = {
+		D93C64A0202DA0A031BDECAD02758A55 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CE81725658553F57B7DCD71C59A9D75C /* FZClosureScrollView.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/FZClosureScrollView/FZClosureScrollView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/FZClosureScrollView/FZClosureScrollView-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/FZClosureScrollView/FZClosureScrollView.modulemap";
-				PRODUCT_MODULE_NAME = FZClosureScrollView;
-				PRODUCT_NAME = FZClosureScrollView;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		DED294E0C5F16788DC9091E102E9EE47 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 973845D2AA8E8A33CEAD548BA2D72DC2 /* FZClosureScrollView.release.xcconfig */;
+			baseConfigurationReference = DCE019B2B8EA388DCC02E5D7F82C8AEE /* FZClosureScrollView.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1683,11 +1704,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8C14FD8A5E9D338B14856632A2F681A4 /* Build configuration list for PBXNativeTarget "FZClosureScrollView" */ = {
+		E5AFE9541145B1427345294CC28771DC /* Build configuration list for PBXNativeTarget "FZClosureScrollView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CF3D784FB1A7CCD6FEB0A67A9AC1C5D8 /* Debug */,
-				DED294E0C5F16788DC9091E102E9EE47 /* Release */,
+				04BE359AA98742CCD5C460C4D4FA812B /* Debug */,
+				D93C64A0202DA0A031BDECAD02758A55 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

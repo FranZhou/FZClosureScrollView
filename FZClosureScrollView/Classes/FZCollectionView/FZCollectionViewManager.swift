@@ -13,6 +13,8 @@ public class FZCollectionViewManager: FZScrollViewManager {
 
     public var collectionViewDelegateDecorator: FZCollectionViewDelegateDecorator?
 
+    public var collectionViewDataSourceDecorator: FZCollectionViewDataSourceDecorator?
+
     // MARK: - override
     public override func responds(to aSelector: Selector!) -> Bool {
         if shouldCheckResponds(to: aSelector) {
@@ -29,7 +31,8 @@ extension FZCollectionViewManager {
     /// - Parameter selector: selector
     /// - Returns: Returns true to indicate that the selector is optional
     private func shouldCheckResponds(to selector: Selector) -> Bool {
-        if isDelegateSelector(selector) {
+        if isDelegateSelector(selector)
+        || isDataSourceSelector(selector) {
             return true
         }
         return false
@@ -41,6 +44,8 @@ extension FZCollectionViewManager {
     private func checkResponds(to selector: Selector) -> Bool {
         if isDelegateSelector(selector) {
             return checkDelegateResponds(to: selector)
+        } else if isDataSourceSelector(selector) {
+            return checkDataSourceResponds(to: selector)
         }
         return false
     }
