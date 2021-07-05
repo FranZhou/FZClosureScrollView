@@ -19,6 +19,7 @@
     "ios": "9.0"
   },
   "source_files": "FZClosureScrollView/Classes/**/*",
+  "swift_versions": "5.0",
   "subspecs": [
     {
       "name": "FZScrollView",
@@ -42,5 +43,6 @@
         ]
       }
     }
-  ]
+  ],
+  "swift_version": "5.0"
 }

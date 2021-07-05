@@ -11,6 +11,8 @@ public class FZCollectionViewManager: FZScrollViewManager {
 
     // MARK: - property
 
+    public var collectionViewDelegateDecorator: FZCollectionViewDelegateDecorator?
+
     // MARK: - override
     public override func responds(to aSelector: Selector!) -> Bool {
         if shouldCheckResponds(to: aSelector) {

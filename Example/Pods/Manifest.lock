@@ -26,7 +26,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  FZClosureScrollView: bcddd3d0dc5bfeddb87f66ee991b72d7313c3764
+  FZClosureScrollView: 4b68864f5cac38ab0567d946df94d4923b99f890
   Nimble: 4f4a345c80b503b3ea13606a4f98405974ee4d0b
   Quick: 6473349e43b9271a8d43839d9ba1c442ed1b7ac4
 

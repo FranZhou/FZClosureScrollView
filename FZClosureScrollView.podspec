@@ -32,6 +32,8 @@ Pod::Spec.new do |s|
 
   s.source_files = 'FZClosureScrollView/Classes/**/*'
 
+  s.swift_version = '5.0'
+
   s.subspec 'FZScrollView' do |scrollView|
     scrollView.source_files = 'FZClosureScrollView/Classes/FZScrollView/**/*'
   end
