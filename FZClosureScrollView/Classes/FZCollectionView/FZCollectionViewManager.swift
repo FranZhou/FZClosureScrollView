@@ -15,6 +15,8 @@ public class FZCollectionViewManager: FZScrollViewManager {
 
     public var collectionViewDataSourceDecorator: FZCollectionViewDataSourceDecorator?
 
+    public var collectionViewPrefetchDataSourceDecorator: FZCollectionViewPrefetchDataSourceDecorator?
+
     // MARK: - override
     public override func responds(to aSelector: Selector!) -> Bool {
         if shouldCheckResponds(to: aSelector) {
@@ -32,7 +34,8 @@ extension FZCollectionViewManager {
     /// - Returns: Returns true to indicate that the selector is optional
     private func shouldCheckResponds(to selector: Selector) -> Bool {
         if isDelegateSelector(selector)
-        || isDataSourceSelector(selector) {
+            || isDataSourceSelector(selector)
+            || isPrefetchDataSourceSelector(selector) {
             return true
         }
         return false
@@ -46,6 +49,8 @@ extension FZCollectionViewManager {
             return checkDelegateResponds(to: selector)
         } else if isDataSourceSelector(selector) {
             return checkDataSourceResponds(to: selector)
+        } else if isPrefetchDataSourceSelector(selector) {
+            return checkPrefetchDataSourceResponds(to: selector)
         }
         return false
     }
