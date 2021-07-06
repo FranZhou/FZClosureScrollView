@@ -22,23 +22,23 @@
   "swift_versions": "5.0",
   "subspecs": [
     {
-      "name": "FZScrollView",
-      "source_files": "FZClosureScrollView/Classes/FZScrollView/**/*"
+      "name": "ScrollView",
+      "source_files": "FZClosureScrollView/Classes/ScrollView/**/*"
     },
     {
-      "name": "FZTableView",
-      "source_files": "FZClosureScrollView/Classes/FZTableView/**/*",
+      "name": "TableView",
+      "source_files": "FZClosureScrollView/Classes/TableView/**/*",
       "dependencies": {
-        "FZClosureScrollView/FZScrollView": [
+        "FZClosureScrollView/ScrollView": [
 
         ]
       }
     },
     {
-      "name": "FZCollectionView",
-      "source_files": "FZClosureScrollView/Classes/FZCollectionView/**/*",
+      "name": "CollectionView",
+      "source_files": "FZClosureScrollView/Classes/CollectionView/**/*",
       "dependencies": {
-        "FZClosureScrollView/FZScrollView": [
+        "FZClosureScrollView/ScrollView": [
 
         ]
       }

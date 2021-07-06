@@ -34,18 +34,18 @@ Pod::Spec.new do |s|
 
   s.swift_version = '5.0'
 
-  s.subspec 'FZScrollView' do |scrollView|
-    scrollView.source_files = 'FZClosureScrollView/Classes/FZScrollView/**/*'
+  s.subspec 'ScrollView' do |scrollView|
+    scrollView.source_files = 'FZClosureScrollView/Classes/ScrollView/**/*'
   end
 
-  s.subspec 'FZTableView' do |tableView|
-    tableView.source_files = 'FZClosureScrollView/Classes/FZTableView/**/*'
-    tableView.dependency 'FZClosureScrollView/FZScrollView'
+  s.subspec 'TableView' do |tableView|
+    tableView.source_files = 'FZClosureScrollView/Classes/TableView/**/*'
+    tableView.dependency 'FZClosureScrollView/ScrollView'
   end
 
-  s.subspec 'FZCollectionView' do |collectionView|
-    collectionView.source_files = 'FZClosureScrollView/Classes/FZCollectionView/**/*'
-    collectionView.dependency 'FZClosureScrollView/FZScrollView'
+  s.subspec 'CollectionView' do |collectionView|
+    collectionView.source_files = 'FZClosureScrollView/Classes/CollectionView/**/*'
+    collectionView.dependency 'FZClosureScrollView/ScrollView'
   end
   
   # s.resource_bundles = {
