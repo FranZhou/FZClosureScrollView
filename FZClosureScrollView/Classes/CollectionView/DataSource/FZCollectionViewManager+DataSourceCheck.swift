@@ -53,6 +53,9 @@ extension FZCollectionViewManager {
     /// - Parameter selector: selector
     /// - Returns: Returns true to indicate that the selector is optional in  DataSource
     internal func isDataSourceSelector(_ selector: Selector) -> Bool {
+        guard let _ = dataSourceDecorator else { 
+            return false
+        }
         let optionalSelector = CollectionViewDataSourceOptionalSelector.allCases.compactMap { optionalSelector in
             return optionalSelector.selector()
         }
@@ -69,24 +72,28 @@ extension FZCollectionViewManager {
             fatalError("FZCollectionViewManager checkDataSourceResponds(to:) error")
         }
 
+        guard let decorator = dataSourceDecorator else {
+            fatalError("FZCollectionViewManager dataSourceDecorator is nil")
+        }
+
         switch optionalEnum {
             case .numberOfSections:
-                return dataSourceDecorator?.collectionViewNumberOfSectionsClosure != nil
+                return decorator.collectionViewNumberOfSectionsClosure != nil
             case .viewForSupplementaryElementOfKind:
-                return dataSourceDecorator?.collectionViewViewForSupplementaryElementOfKindClosure != nil
+                return decorator.collectionViewViewForSupplementaryElementOfKindClosure != nil
             case .canMoveItemAtIndexPath:
-                return dataSourceDecorator?.collectionViewCanMoveItemAtIndexPathClosure != nil
+                return decorator.collectionViewCanMoveItemAtIndexPathClosure != nil
             case .moveItemAtIndexPath:
-                return dataSourceDecorator?.collectionViewMoveItemAtIndexPathClosure != nil
+                return decorator.collectionViewMoveItemAtIndexPathClosure != nil
             case .indexTitles:
                 if #available(iOS 14.0, *) {
-                    return dataSourceDecorator?.collectionViewIndexTitlesClosure != nil
+                    return decorator.collectionViewIndexTitlesClosure != nil
                 } else {
                     return false
                 }
             case .indexPathForIndexTitle:
                 if #available(iOS 14.0, *) {
-                    return dataSourceDecorator?.collectionViewIndexPathForIndexTitleClosure != nil
+                    return decorator.collectionViewIndexPathForIndexTitleClosure != nil
                 } else {
                     return false
                 }

@@ -87,6 +87,9 @@ extension FZScrollViewManager {
     /// - Parameter selector: selector
     /// - Returns: Returns true to indicate that the selector is optional
     private func shouldCheckResponds(to selector: Selector) -> Bool {
+        guard let _ = delegateDecorator else {
+            return false
+        }
         let optionalSelector = ScrollViewDelegateOptionalSelector.allCases.compactMap { optionalSelector in
             return optionalSelector.selector()
         }
@@ -103,36 +106,40 @@ extension FZScrollViewManager {
             fatalError("FZScrollViewManager checkResponds(to:) error")
         }
 
+        guard let decorator = delegateDecorator else {
+            fatalError("FZScrollViewManager delegateDecorator is nil")
+        }
+
         switch optionalEnum {
             case .didScroll:
-                return delegateDecorator?.scrollViewDidScrollClosure != nil
+                return decorator.scrollViewDidScrollClosure != nil
             case .didZoom:
-                return delegateDecorator?.scrollViewDidZoomClosure != nil
+                return decorator.scrollViewDidZoomClosure != nil
             case .willBeginDragging:
-                return delegateDecorator?.scrollViewWillBeginDraggingClosure != nil
+                return decorator.scrollViewWillBeginDraggingClosure != nil
             case .willEndDragging:
-                return delegateDecorator?.scrollViewWillEndDraggingClosure != nil
+                return decorator.scrollViewWillEndDraggingClosure != nil
             case .didEndDragging:
-                return delegateDecorator?.scrollViewDidEndDraggingClosure != nil
+                return decorator.scrollViewDidEndDraggingClosure != nil
             case .willBeginDecelerating:
-                return delegateDecorator?.scrollViewWillBeginDeceleratingClosure != nil
+                return decorator.scrollViewWillBeginDeceleratingClosure != nil
             case .didEndDecelerating:
-                return delegateDecorator?.scrollViewDidEndDeceleratingClosure != nil
+                return decorator.scrollViewDidEndDeceleratingClosure != nil
             case .didEndScrollingAnimation:
-                return delegateDecorator?.scrollViewDidEndScrollingAnimationClosure != nil
+                return decorator.scrollViewDidEndScrollingAnimationClosure != nil
             case .viewForZooming:
-                return delegateDecorator?.viewForZoomingClosure != nil
+                return decorator.viewForZoomingClosure != nil
             case .willBeginZooming:
-                return delegateDecorator?.scrollViewWillBeginZoomingClosure != nil
+                return decorator.scrollViewWillBeginZoomingClosure != nil
             case .didEndZooming:
-                return delegateDecorator?.scrollViewDidEndZoomingClosure != nil
+                return decorator.scrollViewDidEndZoomingClosure != nil
             case .shouldScrollToTop:
-                return delegateDecorator?.scrollViewShouldScrollToTopClosure != nil
+                return decorator.scrollViewShouldScrollToTopClosure != nil
             case .didScrollToTop:
-                return delegateDecorator?.scrollViewDidScrollToTopClosure != nil
+                return decorator.scrollViewDidScrollToTopClosure != nil
             case .didChangeAdjustedContentInset:
                 if #available(iOS 11.0, *) {
-                    return delegateDecorator?.scrollViewDidChangeAdjustedContentInsetClosure != nil
+                    return decorator.scrollViewDidChangeAdjustedContentInsetClosure != nil
                 } else {
                     return false
                 }

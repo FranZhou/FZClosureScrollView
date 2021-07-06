@@ -169,6 +169,9 @@ extension FZCollectionViewManager {
     /// - Parameter selector: selector
     /// - Returns: Returns true to indicate that the selector is optional in  Delegate
     internal func isDelegateSelector(_ selector: Selector) -> Bool {
+        guard let _ = collectionViewDelegateDecorator else {
+            return false
+        }
         let optionalSelector = CollectionViewDelegateOptionalSelector.allCases.compactMap { optionalSelector in
             return optionalSelector.selector()
         }
@@ -185,112 +188,116 @@ extension FZCollectionViewManager {
             fatalError("FZCollectionViewManager checkDelegateResponds(to:) error")
         }
 
+        guard let decorator = collectionViewDelegateDecorator else {
+            fatalError("FZCollectionViewManager collectionViewDelegateDecorator is nil")
+        }
+
         switch optionalEnum {
             case .shouldHighlightItemAtIndexPath:
-                return collectionViewDelegateDecorator?.collectionViewShouldHighlightItemAtIndexPathClosure != nil
+                return decorator.collectionViewShouldHighlightItemAtIndexPathClosure != nil
             case .didHighlightItemAtIndexPath:
-                return collectionViewDelegateDecorator?.collectionViewDidHighlightItemAtIndexPathClosure != nil
+                return decorator.collectionViewDidHighlightItemAtIndexPathClosure != nil
             case .didUnhighlightItemAtIndexPath:
-                return collectionViewDelegateDecorator?.collectionViewDidUnhighlightItemAtIndexPathClosure != nil
+                return decorator.collectionViewDidUnhighlightItemAtIndexPathClosure != nil
             case .shouldSelectItemAtIndexPath:
-                return collectionViewDelegateDecorator?.collectionViewShouldSelectItemAtIndexPathClosure != nil
+                return decorator.collectionViewShouldSelectItemAtIndexPathClosure != nil
             case .shouldDeselectItemAtIndexPath:
-                return collectionViewDelegateDecorator?.collectionViewShouldDeselectItemAtIndexPathClosure != nil
+                return decorator.collectionViewShouldDeselectItemAtIndexPathClosure != nil
             case .didSelectItemAtIndexPath:
-                return collectionViewDelegateDecorator?.collectionViewDidSelectItemAtIndexPathClosure != nil
+                return decorator.collectionViewDidSelectItemAtIndexPathClosure != nil
             case .didDeselectItemAtIndexPath:
-                return collectionViewDelegateDecorator?.collectionViewDidDeselectItemAtIndexPathClosure != nil
+                return decorator.collectionViewDidDeselectItemAtIndexPathClosure != nil
             case .willDisplayCell:
-                return collectionViewDelegateDecorator?.collectionViewWillDisplayCellClosure != nil
+                return decorator.collectionViewWillDisplayCellClosure != nil
             case .willDisplaySupplementaryView:
-                return collectionViewDelegateDecorator?.collectionViewWillDisplaySupplementaryViewClosure != nil
+                return decorator.collectionViewWillDisplaySupplementaryViewClosure != nil
             case .didEndDisplayingCell:
-                return collectionViewDelegateDecorator?.collectionViewDidEndDisplayingCellClosure != nil
+                return decorator.collectionViewDidEndDisplayingCellClosure != nil
             case .didEndDisplayingSupplementaryView:
-                return collectionViewDelegateDecorator?.collectionViewDidEndDisplayingSupplementaryViewClosure != nil
+                return decorator.collectionViewDidEndDisplayingSupplementaryViewClosure != nil
             case .shouldShowMenuForItemAtIndexPath:
-                return collectionViewDelegateDecorator?.collectionViewShouldShowMenuForItemAtIndexPathClosure != nil
+                return decorator.collectionViewShouldShowMenuForItemAtIndexPathClosure != nil
             case .canPerformAction:
-                return collectionViewDelegateDecorator?.collectionViewCanPerformActionClosure != nil
+                return decorator.collectionViewCanPerformActionClosure != nil
             case .performAction:
-                return collectionViewDelegateDecorator?.collectionViewPerformActionClosure != nil
+                return decorator.collectionViewPerformActionClosure != nil
             case .transitionLayoutForOldLayout:
-                return collectionViewDelegateDecorator?.collectionViewTransitionLayoutForOldLayoutClosure != nil
+                return decorator.collectionViewTransitionLayoutForOldLayoutClosure != nil
             case .canFocusItemAtIndexPath:
-                return collectionViewDelegateDecorator?.collectionViewCanFocusItemAtIndexPathClosure != nil
+                return decorator.collectionViewCanFocusItemAtIndexPathClosure != nil
             case .shouldUpdateFocusInContext:
-                return collectionViewDelegateDecorator?.collectionViewShouldUpdateFocusInContextClosure != nil
+                return decorator.collectionViewShouldUpdateFocusInContextClosure != nil
             case .didUpdateFocusInContext:
-                return collectionViewDelegateDecorator?.collectionViewDidUpdateFocusInContextClosure != nil
+                return decorator.collectionViewDidUpdateFocusInContextClosure != nil
             case .indexPathForPreferredFocusedView:
-                return collectionViewDelegateDecorator?.collectionViewIndexPathForPreferredFocusedViewClosure != nil
+                return decorator.collectionViewIndexPathForPreferredFocusedViewClosure != nil
             case .targetIndexPathForMoveFromItemAtIndexPath:
-                return collectionViewDelegateDecorator?.collectionViewTargetIndexPathForMoveFromItemAtIndexPathClosure != nil
+                return decorator.collectionViewTargetIndexPathForMoveFromItemAtIndexPathClosure != nil
             case .targetContentOffsetForProposedContentOffset:
-                return collectionViewDelegateDecorator?.collectionViewTargetContentOffsetForProposedContentOffsetClosure != nil
+                return decorator.collectionViewTargetContentOffsetForProposedContentOffsetClosure != nil
             case .canEditItemAtIndexPath:
                 if #available(iOS 14.0, *) {
-                    return collectionViewDelegateDecorator?.collectionViewCanEditItemAtIndexPathClosure != nil
+                    return decorator.collectionViewCanEditItemAtIndexPathClosure != nil
                 } else {
                     return false
                 }
             case .shouldSpringLoadItemAtIndexPath:
                 if #available(iOS 11.0, *) {
-                    return collectionViewDelegateDecorator?.collectionViewShouldSpringLoadItemAtIndexPathClosure != nil
+                    return decorator.collectionViewShouldSpringLoadItemAtIndexPathClosure != nil
                 } else {
                     return false
                 }
             case .shouldBeginMultipleSelectionInteractionAtIndexPath:
                 if #available(iOS 13.0, *) {
-                    return collectionViewDelegateDecorator?.collectionViewShouldBeginMultipleSelectionInteractionAtIndexPathClosure != nil
+                    return decorator.collectionViewShouldBeginMultipleSelectionInteractionAtIndexPathClosure != nil
                 } else {
                     return false
                 }
             case .didBeginMultipleSelectionInteractionAtIndexPath:
                 if #available(iOS 13.0, *) {
-                    return collectionViewDelegateDecorator?.collectionViewDidBeginMultipleSelectionInteractionAtIndexPathClosure != nil
+                    return decorator.collectionViewDidBeginMultipleSelectionInteractionAtIndexPathClosure != nil
                 } else {
                     return false
                 }
             case .didEndMultipleSelectionInteraction:
                 if #available(iOS 13.0, *) {
-                    return collectionViewDelegateDecorator?.collectionViewDidEndMultipleSelectionInteractionClosure != nil
+                    return decorator.collectionViewDidEndMultipleSelectionInteractionClosure != nil
                 } else {
                     return false
                 }
             case .contextMenuConfigurationForItemAtIndexPath:
                 if #available(iOS 13.0, *) {
-                    return collectionViewDelegateDecorator?.collectionViewContextMenuConfigurationForItemAtIndexPathClosure != nil
+                    return decorator.collectionViewContextMenuConfigurationForItemAtIndexPathClosure != nil
                 } else {
                     return false
                 }
             case .previewForHighlightingContextMenuWithConfiguration:
                 if #available(iOS 13.0, *) {
-                    return collectionViewDelegateDecorator?.collectionViewPreviewForHighlightingContextMenuWithConfigurationClosure != nil
+                    return decorator.collectionViewPreviewForHighlightingContextMenuWithConfigurationClosure != nil
                 } else {
                     return false
                 }
             case .previewForDismissingContextMenuWithConfiguration:
                 if #available(iOS 13.0, *) {
-                    return collectionViewDelegateDecorator?.collectionViewPreviewForDismissingContextMenuWithConfigurationClosure != nil
+                    return decorator.collectionViewPreviewForDismissingContextMenuWithConfigurationClosure != nil
                 } else {
                     return false
                 }
             case .willPerformPreviewActionForMenu:
                 if #available(iOS 13.0, *) {
-                    return collectionViewDelegateDecorator?.collectionViewWillPerformPreviewActionForMenuClosure != nil
+                    return decorator.collectionViewWillPerformPreviewActionForMenuClosure != nil
                 } else {
                     return false
                 }
             case .willDisplayContextMenu:
                 if #available(iOS 13.2, *) {
-                    return collectionViewDelegateDecorator?.collectionViewWillDisplayContextMenuClosure != nil
+                    return decorator.collectionViewWillDisplayContextMenuClosure != nil
                 } else {
                     return false
                 }
             case .willEndContextMenuInteraction:
                 if #available(iOS 13.2, *) {
-                    return collectionViewDelegateDecorator?.collectionViewWillEndContextMenuInteractionClosure != nil
+                    return decorator.collectionViewWillEndContextMenuInteractionClosure != nil
                 } else {
                     return false
                 }

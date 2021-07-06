@@ -30,6 +30,9 @@ extension FZCollectionViewManager {
     /// - Parameter selector: selector
     /// - Returns: Returns true to indicate that the selector is optional in  PrefetchDataSource
     internal func isPrefetchDataSourceSelector(_ selector: Selector) -> Bool {
+        guard let _ = prefetchDataSourceDecorator else {
+            return false
+        }
         let optionalSelector = CollectionViewPrefetchDataSourceOptionalSelector.allCases.compactMap { optionalSelector in
             return optionalSelector.selector()
         }
@@ -46,9 +49,13 @@ extension FZCollectionViewManager {
             fatalError("FZCollectionViewManager checkPrefetchDataSourceResponds(to:) error")
         }
 
+        guard let decorator = prefetchDataSourceDecorator else {
+            fatalError("FZCollectionViewManager prefetchDataSourceDecorator is nil")
+        }
+
         switch optionalEnum {
             case .cancelPrefetchingForItemsAtIndexPaths:
-                return prefetchDataSourceDecorator?.collectionViewCancelPrefetchingForItemsAtIndexPathsClosure != nil
+                return decorator.collectionViewCancelPrefetchingForItemsAtIndexPathsClosure != nil
             @unknown default:
                 return false
         }

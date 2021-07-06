@@ -225,6 +225,9 @@ extension FZTableViewManager {
     /// - Parameter selector: selector
     /// - Returns: Returns true to indicate that the selector is optional in  Delegate
     internal func isDelegateSelector(_ selector: Selector) -> Bool {
+        guard let _ = tableViewDelegateDecorator else {
+            return false
+        }
         let optionalSelector = TableViewDelegateOptionalSelector.allCases.compactMap { dataSourceSelector in
             return dataSourceSelector.selector()
         }
@@ -241,150 +244,154 @@ extension FZTableViewManager {
             fatalError("FZTableViewManager checkDelegateResponds(to:) error")
         }
 
+        guard let decorator = tableViewDelegateDecorator else {
+            fatalError("FZTableViewManager tableViewDelegateDecorator is nil")
+        }
+
         switch optionalEnum {
             case .willDisplayCell:
-                return tableViewDelegateDecorator?.tableViewWillDisplayCellClosure != nil
+                return decorator.tableViewWillDisplayCellClosure != nil
             case .willDisplayHeaderView:
-                return tableViewDelegateDecorator?.tableViewWillDisplayHeaderViewClosure != nil
+                return decorator.tableViewWillDisplayHeaderViewClosure != nil
             case .willDisplayFooterView:
-                return tableViewDelegateDecorator?.tableViewWillDisplayFooterViewClosure != nil
+                return decorator.tableViewWillDisplayFooterViewClosure != nil
             case .didEndDisplayingCell:
-                return tableViewDelegateDecorator?.tableViewDidEndDisplayingCellClosure != nil
+                return decorator.tableViewDidEndDisplayingCellClosure != nil
             case .didEndDisplayingHeaderView:
-                return tableViewDelegateDecorator?.tableViewDidEndDisplayingHeaderViewClosure != nil
+                return decorator.tableViewDidEndDisplayingHeaderViewClosure != nil
             case .didEndDisplayingFooterView:
-                return tableViewDelegateDecorator?.tableViewDidEndDisplayingFooterViewClosure != nil
+                return decorator.tableViewDidEndDisplayingFooterViewClosure != nil
             case .heightForRowAtIndexPath:
-                return tableViewDelegateDecorator?.tableViewHeightForRowAtIndexPathClosure != nil
+                return decorator.tableViewHeightForRowAtIndexPathClosure != nil
             case .heightForHeaderInSection:
-                return tableViewDelegateDecorator?.tableViewHeightForHeaderInSectionClosure != nil
+                return decorator.tableViewHeightForHeaderInSectionClosure != nil
             case .heightForFooterInSection:
-                return tableViewDelegateDecorator?.tableViewHeightForFooterInSectionClosure != nil
+                return decorator.tableViewHeightForFooterInSectionClosure != nil
             case .estimatedHeightForRowAtIndexPath:
-                return tableViewDelegateDecorator?.tableViewEstimatedHeightForRowAtIndexPathClosure != nil
+                return decorator.tableViewEstimatedHeightForRowAtIndexPathClosure != nil
             case .estimatedHeightForHeaderInSection:
-                return tableViewDelegateDecorator?.tableViewEstimatedHeightForHeaderInSectionClosure != nil
+                return decorator.tableViewEstimatedHeightForHeaderInSectionClosure != nil
             case .estimatedHeightForFooterInSection:
-                return tableViewDelegateDecorator?.tableViewEstimatedHeightForFooterInSectionClosure != nil
+                return decorator.tableViewEstimatedHeightForFooterInSectionClosure != nil
             case .viewForHeaderInSection:
-                return tableViewDelegateDecorator?.tableViewViewForHeaderInSectionClosure != nil
+                return decorator.tableViewViewForHeaderInSectionClosure != nil
             case .viewForFooterInSection:
-                return tableViewDelegateDecorator?.tableViewViewForFooterInSectionClosure != nil
+                return decorator.tableViewViewForFooterInSectionClosure != nil
             case .accessoryButtonTappedForRowWithIndexPath:
-                return tableViewDelegateDecorator?.tableViewAccessoryButtonTappedForRowWithIndexPathClosure != nil
+                return decorator.tableViewAccessoryButtonTappedForRowWithIndexPathClosure != nil
             case .shouldHighlightRowAtIndexPath:
-                return tableViewDelegateDecorator?.tableViewShouldHighlightRowAtIndexPathClosure != nil
+                return decorator.tableViewShouldHighlightRowAtIndexPathClosure != nil
             case .didHighlightRowAtIndexPath:
-                return tableViewDelegateDecorator?.tableViewDidHighlightRowAtIndexPathClosure != nil
+                return decorator.tableViewDidHighlightRowAtIndexPathClosure != nil
             case .didUnhighlightRowAtIndexPath:
-                return tableViewDelegateDecorator?.tableViewDidUnhighlightRowAtIndexPathClosure != nil
+                return decorator.tableViewDidUnhighlightRowAtIndexPathClosure != nil
             case .willSelectRowAtIndexPath:
-                return tableViewDelegateDecorator?.tableViewWillSelectRowAtIndexPathClosure != nil
+                return decorator.tableViewWillSelectRowAtIndexPathClosure != nil
             case .willDeselectRowAtIndexPath:
-                return tableViewDelegateDecorator?.tableViewWillDeselectRowAtIndexPathClosure != nil
+                return decorator.tableViewWillDeselectRowAtIndexPathClosure != nil
             case .didSelectRowAtIndexPath:
-                return tableViewDelegateDecorator?.tableViewDidSelectRowAtIndexPathClosure != nil
+                return decorator.tableViewDidSelectRowAtIndexPathClosure != nil
             case .didDeselectRowAtIndexPath:
-                return tableViewDelegateDecorator?.tableViewDidDeselectRowAtIndexPathClosure != nil
+                return decorator.tableViewDidDeselectRowAtIndexPathClosure != nil
             case .editingStyleForRowAtIndexPath:
-                return tableViewDelegateDecorator?.tableViewEditingStyleForRowAtIndexPathClosure != nil
+                return decorator.tableViewEditingStyleForRowAtIndexPathClosure != nil
             case .titleForDeleteConfirmationButtonForRowAtIndexPath:
-                return tableViewDelegateDecorator?.tableViewTitleForDeleteConfirmationButtonForRowAtIndexPathClosure != nil
+                return decorator.tableViewTitleForDeleteConfirmationButtonForRowAtIndexPathClosure != nil
             case .editActionsForRowAtIndexPath:
-                return tableViewDelegateDecorator?.tableViewEditActionsForRowAtIndexPathClosure != nil
+                return decorator.tableViewEditActionsForRowAtIndexPathClosure != nil
             case .leadingSwipeActionsConfigurationForRowAtIndexPath:
                 if #available(iOS 11.0, *) {
-                    return tableViewDelegateDecorator?.tableViewLeadingSwipeActionsConfigurationForRowAtIndexPathClosure != nil
+                    return decorator.tableViewLeadingSwipeActionsConfigurationForRowAtIndexPathClosure != nil
                 } else {
                     return false
                 }
             case .trailingSwipeActionsConfigurationForRowAtIndexPath:
                 if #available(iOS 11.0, *) {
-                    return tableViewDelegateDecorator?.tableViewTrailingSwipeActionsConfigurationForRowAtIndexPathClosure != nil
+                    return decorator.tableViewTrailingSwipeActionsConfigurationForRowAtIndexPathClosure != nil
                 } else {
                     return false
                 }
             case .shouldIndentWhileEditingRowAtIndexPath:
-                return tableViewDelegateDecorator?.tableViewShouldIndentWhileEditingRowAtIndexPathClosure != nil
+                return decorator.tableViewShouldIndentWhileEditingRowAtIndexPathClosure != nil
             case .willBeginEditingRowAtIndexPath:
-                return tableViewDelegateDecorator?.tableViewWillBeginEditingRowAtIndexPathClosure != nil
+                return decorator.tableViewWillBeginEditingRowAtIndexPathClosure != nil
             case .didEndEditingRowAtIndexPath:
-                return tableViewDelegateDecorator?.tableViewDidEndEditingRowAtIndexPathClosure != nil
+                return decorator.tableViewDidEndEditingRowAtIndexPathClosure != nil
             case .targetIndexPathForMoveFromRowAtIndexPath:
-                return tableViewDelegateDecorator?.tableViewTargetIndexPathForMoveFromRowAtIndexPathClosure != nil
+                return decorator.tableViewTargetIndexPathForMoveFromRowAtIndexPathClosure != nil
             case .indentationLevelForRowAtIndexPath:
-                return tableViewDelegateDecorator?.tableViewIndentationLevelForRowAtIndexPathClosure != nil
+                return decorator.tableViewIndentationLevelForRowAtIndexPathClosure != nil
             case .shouldShowMenuForRowAtIndexPath:
-                return tableViewDelegateDecorator?.tableViewShouldShowMenuForRowAtIndexPathClosure != nil
+                return decorator.tableViewShouldShowMenuForRowAtIndexPathClosure != nil
             case .canPerformAction:
-                return tableViewDelegateDecorator?.tableViewCanPerformActionClosure != nil
+                return decorator.tableViewCanPerformActionClosure != nil
             case .performAction:
-                return tableViewDelegateDecorator?.tableViewPerformActionClosure != nil
+                return decorator.tableViewPerformActionClosure != nil
             case .canFocusRowAtIndexPath:
-                return tableViewDelegateDecorator?.tableViewCanFocusRowAtIndexPathClosure != nil
+                return decorator.tableViewCanFocusRowAtIndexPathClosure != nil
             case .shouldUpdateFocus:
-                return tableViewDelegateDecorator?.tableViewShouldUpdateFocusClosure != nil
+                return decorator.tableViewShouldUpdateFocusClosure != nil
             case .didUpdateFocus:
-                return tableViewDelegateDecorator?.tableViewDidUpdateFocusClosure != nil
+                return decorator.tableViewDidUpdateFocusClosure != nil
             case .indexPathForPreferredFocusedView:
-                return tableViewDelegateDecorator?.tableViewIndexPathForPreferredFocusedViewClosure != nil
+                return decorator.tableViewIndexPathForPreferredFocusedViewClosure != nil
             case .shouldSpringLoadRowAtIndexPath:
                 if #available(iOS 11.0, *) {
-                    return tableViewDelegateDecorator?.tableViewShouldSpringLoadRowAtIndexPathClosure != nil
+                    return decorator.tableViewShouldSpringLoadRowAtIndexPathClosure != nil
                 } else {
                     return false
                 }
             case .shouldBeginMultipleSelectionInteractionAtIndexPath:
                 if #available(iOS 13.0, *) {
-                    return tableViewDelegateDecorator?.tableViewShouldBeginMultipleSelectionInteractionAtIndexPathClosure != nil
+                    return decorator.tableViewShouldBeginMultipleSelectionInteractionAtIndexPathClosure != nil
                 } else {
                     return false
                 }
             case .didBeginMultipleSelectionInteractionAtIndexPath:
                 if #available(iOS 13.0, *) {
-                    return tableViewDelegateDecorator?.tableViewDidBeginMultipleSelectionInteractionAtIndexPathlosure != nil
+                    return decorator.tableViewDidBeginMultipleSelectionInteractionAtIndexPathlosure != nil
                 } else {
                     return false
                 }
             case .didEndMultipleSelectionInteraction:
                 if #available(iOS 13.0, *) {
-                    return tableViewDelegateDecorator?.tableViewDidEndMultipleSelectionInteractionClosure != nil
+                    return decorator.tableViewDidEndMultipleSelectionInteractionClosure != nil
                 } else {
                     return false
                 }
             case .contextMenuConfigurationForRowAtIndexPath:
                 if #available(iOS 13.0, *) {
-                    return tableViewDelegateDecorator?.tableViewContextMenuConfigurationForRowAtIndexPathClosure != nil
+                    return decorator.tableViewContextMenuConfigurationForRowAtIndexPathClosure != nil
                 } else {
                     return false
                 }
             case .previewForHighlightingContextMenuWithConfiguration:
                 if #available(iOS 13.0, *) {
-                    return tableViewDelegateDecorator?.tableViewPreviewForHighlightingContextMenuWithConfigurationClosure != nil
+                    return decorator.tableViewPreviewForHighlightingContextMenuWithConfigurationClosure != nil
                 } else {
                     return false
                 }
             case .previewForDismissingContextMenuWithConfiguration:
                 if #available(iOS 13.0, *) {
-                    return tableViewDelegateDecorator?.tableViewPreviewForDismissingContextMenuWithConfigurationClosure != nil
+                    return decorator.tableViewPreviewForDismissingContextMenuWithConfigurationClosure != nil
                 } else {
                     return false
                 }
             case .willPerformPreviewActionForMenu:
                 if #available(iOS 13.0, *) {
-                    return tableViewDelegateDecorator?.tableViewWillPerformPreviewActionForMenuClosure != nil
+                    return decorator.tableViewWillPerformPreviewActionForMenuClosure != nil
                 } else {
                     return false
                 }
             case .willDisplayContextMenu:
                 if #available(iOS 14.0, *) {
-                    return tableViewDelegateDecorator?.tableViewWillDisplayContextMenuClosure != nil
+                    return decorator.tableViewWillDisplayContextMenuClosure != nil
                 } else {
                     return false
                 }
             case .willEndContextMenuInteraction:
                 if #available(iOS 14.0, *) {
-                    return tableViewDelegateDecorator?.tableViewWillEndContextMenuInteractionClosure != nil
+                    return decorator.tableViewWillEndContextMenuInteractionClosure != nil
                 } else {
                     return false
                 }

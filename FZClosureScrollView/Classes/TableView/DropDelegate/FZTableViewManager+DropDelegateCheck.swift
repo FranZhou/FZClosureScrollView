@@ -48,6 +48,9 @@ extension FZTableViewManager {
     /// - Parameter selector: selector
     /// - Returns: Returns true to indicate that the selector is optional in  DropDelegate
     internal func isDropDelegateSelector(_ selector: Selector) -> Bool {
+        guard let _ = dropDelegateDecorator else {
+            return false
+        }
         let optionalSelector = TableViewDropDelegateOptionalSelector.allCases.compactMap { dataSourceSelector in
             return dataSourceSelector.selector()
         }
@@ -64,19 +67,23 @@ extension FZTableViewManager {
             fatalError("FZTableViewManager checkDropDelegateResponds(to:) error")
         }
 
+        guard let decorator = dropDelegateDecorator else {
+            fatalError("FZTableViewManager dropDelegateDecorator is nil")
+        }
+
         switch optionalEnum {
             case .canHandleSession:
-                return dropDelegateDecorator?.tableViewCanHandleSessionClosure != nil
+                return decorator.tableViewCanHandleSessionClosure != nil
             case .dropSessionDidEnter:
-                return dropDelegateDecorator?.tableViewDropSessionDidEnterClosure != nil
+                return decorator.tableViewDropSessionDidEnterClosure != nil
             case .dropSessionDidUpdate:
-                return dropDelegateDecorator?.tableViewDropSessionDidUpdateClosure != nil
+                return decorator.tableViewDropSessionDidUpdateClosure != nil
             case .dropSessionDidExit:
-                return dropDelegateDecorator?.tableViewDropSessionDidExitClosure != nil
+                return decorator.tableViewDropSessionDidExitClosure != nil
             case .dropSessionDidEnd:
-                return dropDelegateDecorator?.tableViewDropSessionDidEndClosure != nil
+                return decorator.tableViewDropSessionDidEndClosure != nil
             case .dropPreviewParametersForRowAtIndexPath:
-                return dropDelegateDecorator?.tableViewDropPreviewParametersForRowAtIndexPathClosure != nil
+                return decorator.tableViewDropPreviewParametersForRowAtIndexPathClosure != nil
             @unknown default:
                 return false
         }

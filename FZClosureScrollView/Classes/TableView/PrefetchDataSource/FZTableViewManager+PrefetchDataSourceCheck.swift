@@ -31,6 +31,9 @@ extension FZTableViewManager {
     /// - Parameter selector: selector
     /// - Returns: Returns true to indicate that the selector is optional in  PrefetchDataSource
     internal func isPrefetchDataSourceSelector(_ selector: Selector) -> Bool {
+        guard let _ = prefetchDataSourceDecorator else {
+            return false
+        }
         let optionalSelector = TableViewPrefetchDataSourceOptionalSelector.allCases.compactMap { dataSourceSelector in
             return dataSourceSelector.selector()
         }
@@ -47,9 +50,13 @@ extension FZTableViewManager {
             fatalError("FZTableViewManager checkPrefetchDataSourceResponds(to:) error")
         }
 
+        guard let decorator = prefetchDataSourceDecorator else {
+            fatalError("FZTableViewManager prefetchDataSourceDecorator is nil")
+        }
+
         switch optionalEnum {
             case .cancelPrefetchingForRowsAtIndexPaths:
-                return prefetchDataSourceDecorator?.tableViewCancelPrefetchingForRowsAtIndexPathsClosure != nil
+                return decorator.tableViewCancelPrefetchingForRowsAtIndexPathsClosure != nil
             @unknown default:
                 return false
         }

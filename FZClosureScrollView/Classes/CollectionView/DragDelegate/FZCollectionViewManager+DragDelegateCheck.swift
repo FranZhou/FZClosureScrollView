@@ -47,6 +47,9 @@ extension FZCollectionViewManager {
     /// - Parameter selector: selector
     /// - Returns: Returns true to indicate that the selector is optional in  DragDelegate
     internal func isDragDelegateSelector(_ selector: Selector) -> Bool {
+        guard let _ = dragDelegateDecorator else {
+            return false
+        }
         let optionalSelector = CollectionViewDragDelegateOptionalSelector.allCases.compactMap { optionalSelector in
             return optionalSelector.selector()
         }
@@ -63,19 +66,23 @@ extension FZCollectionViewManager {
             fatalError("FZCollectionViewManager checkDragDelegateResponds(to:) error")
         }
 
+        guard let decorator = dragDelegateDecorator else {
+            fatalError("FZCollectionViewManager dragDelegateDecorator is nil")
+        }
+
         switch optionalEnum {
             case .itemsForAdding:
-                return dragDelegateDecorator?.collectionViewItemsForAddingClosure != nil
+                return decorator.collectionViewItemsForAddingClosure != nil
             case .dragPreviewParametersForItemAtIndexPath:
-                return dragDelegateDecorator?.collectionViewDragPreviewParametersForItemAtIndexPathClosure != nil
+                return decorator.collectionViewDragPreviewParametersForItemAtIndexPathClosure != nil
             case .dragSessionWillBegin:
-                return dragDelegateDecorator?.collectionViewDragSessionWillBeginClosure != nil
+                return decorator.collectionViewDragSessionWillBeginClosure != nil
             case .dragSessionDidEnd:
-                return dragDelegateDecorator?.collectionViewDragSessionDidEndClosure != nil
+                return decorator.collectionViewDragSessionDidEndClosure != nil
             case .dragSessionAllowsMoveOperation:
-                return dragDelegateDecorator?.collectionViewDragSessionAllowsMoveOperationClosure != nil
+                return decorator.collectionViewDragSessionAllowsMoveOperationClosure != nil
             case .dragSessionIsRestrictedToDraggingApplication:
-                return dragDelegateDecorator?.collectionViewDragSessionIsRestrictedToDraggingApplicationClosure != nil
+                return decorator.collectionViewDragSessionIsRestrictedToDraggingApplicationClosure != nil
             @unknown default:
                 return false
         }

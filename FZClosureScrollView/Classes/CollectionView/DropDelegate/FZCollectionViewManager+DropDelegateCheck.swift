@@ -47,6 +47,9 @@ extension FZCollectionViewManager {
     /// - Parameter selector: selector
     /// - Returns: Returns true to indicate that the selector is optional in  DropDelegate
     internal func isDropDelegateSelector(_ selector: Selector) -> Bool {
+        guard let _ = dropDelegateDecorator else {
+            return false
+        }
         let optionalSelector = CollectionViewDropDelegateOptionalSelector.allCases.compactMap { optionalSelector in
             return optionalSelector.selector()
         }
@@ -63,19 +66,23 @@ extension FZCollectionViewManager {
             fatalError("FZCollectionViewManager checkDropDelegateResponds(to:) error")
         }
 
+        guard let decorator = dropDelegateDecorator else {
+            fatalError("FZCollectionViewManager dropDelegateDecorator is nil")
+        }
+
         switch optionalEnum {
             case .canHandleSession:
-                return dropDelegateDecorator?.collectionViewCanHandleSessionClosure != nil
+                return decorator.collectionViewCanHandleSessionClosure != nil
             case .dropSessionDidEnter:
-                return dropDelegateDecorator?.collectionViewDropSessionDidEnterClosure != nil
+                return decorator.collectionViewDropSessionDidEnterClosure != nil
             case .dropSessionDidUpdate:
-                return dropDelegateDecorator?.collectionViewDropSessionDidUpdateClosure != nil
+                return decorator.collectionViewDropSessionDidUpdateClosure != nil
             case .dropSessionDidExit:
-                return dropDelegateDecorator?.collectionViewDropSessionDidExitClosure != nil
+                return decorator.collectionViewDropSessionDidExitClosure != nil
             case .dropSessionDidEnd:
-                return dropDelegateDecorator?.collectionViewDropSessionDidEndClosure != nil
+                return decorator.collectionViewDropSessionDidEndClosure != nil
             case .dropPreviewParametersForItemAtIndexPath:
-                return dropDelegateDecorator?.collectionViewDropPreviewParametersForItemAtIndexPathClosure != nil
+                return decorator.collectionViewDropPreviewParametersForItemAtIndexPathClosure != nil
             @unknown default:
                 return false
         }

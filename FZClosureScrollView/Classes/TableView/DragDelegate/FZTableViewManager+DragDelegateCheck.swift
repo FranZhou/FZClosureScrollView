@@ -47,6 +47,9 @@ extension FZTableViewManager {
     /// - Parameter selector: selector
     /// - Returns: Returns true to indicate that the selector is optional in  DragDelegate
     internal func isDragDelegateSelector(_ selector: Selector) -> Bool {
+        guard let _ = dragDelegateDecorator else {
+            return false
+        }
         let optionalSelector = TableViewDragDelegateOptionalSelector.allCases.compactMap { dataSourceSelector in
             return dataSourceSelector.selector()
         }
@@ -63,19 +66,23 @@ extension FZTableViewManager {
             fatalError("FZTableViewManager checkDragDelegateResponds(to:) error")
         }
 
+        guard let decorator = dragDelegateDecorator else {
+            fatalError("FZTableViewManager dragDelegateDecorator is nil")
+        }
+
         switch optionalEnum {
             case .itemsForAdding:
-                return dragDelegateDecorator?.tableViewItemsForAddingClosure != nil
+                return decorator.tableViewItemsForAddingClosure != nil
             case .dragPreviewParametersForRowAtIndexPath:
-                return dragDelegateDecorator?.tableViewDragPreviewParametersForRowAtIndexPathClosure != nil
+                return decorator.tableViewDragPreviewParametersForRowAtIndexPathClosure != nil
             case .dragSessionWillBegin:
-                return dragDelegateDecorator?.tableViewDragSessionWillBeginClosure != nil
+                return decorator.tableViewDragSessionWillBeginClosure != nil
             case .dragSessionDidEnd:
-                return dragDelegateDecorator?.tableViewDragSessionDidEndClosure != nil
+                return decorator.tableViewDragSessionDidEndClosure != nil
             case .dragSessionAllowsMoveOperation:
-                return dragDelegateDecorator?.tableViewDragSessionAllowsMoveOperationClosure != nil
+                return decorator.tableViewDragSessionAllowsMoveOperationClosure != nil
             case .dragSessionIsRestrictedToDraggingApplication:
-                return dragDelegateDecorator?.tableViewDragSessionIsRestrictedToDraggingApplicationClosure != nil
+                return decorator.tableViewDragSessionIsRestrictedToDraggingApplicationClosure != nil
             @unknown default:
                 return false
         }
